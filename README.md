@@ -1,4 +1,12 @@
-- Algorithm 기본 코드/이론 정리
+# :sparkles:**TIL Garden**:sparkles:
 
-- Repositories 요약
+#### [Algorithms 문제풀이](https://github.com/seoul-ssafy-class-2-studyclub/Algorithms-Tess)
+
+- Algorithms 
+  - 표준 코드 및 이론 정리	
+  - Code reviews
+
+- Papers
+  - NLP
+  - Linguistics
 
