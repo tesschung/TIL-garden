@@ -1,0 +1,34 @@
+﻿퀵 정렬
+퀵 정렬은 분할 정복 알고리즘의 좋은 예이다.
+
+리스트 중 하나를 pivot으로 정하고, 
+pivot보다 작은 아이템은 왼쪽, 
+pivot보다 큰 아이템은 오른쪽으로 보내면서 
+pivot의 자리를 확정한다.
+
+그리고 왼쪽 리스트와 오른쪽 리스트에 대해서 재귀형식으로 진행.
+
+평균 시간복잡도는 O(n*log n), 최악의 시간복잡도는 O(n^2)
+
+def quickSort(a, begin, end) :
+    if begin < end :
+        p = partition(a, begin, end)
+        quickSort(a, begin, p-1)
+        quickSort(a, p+1, end)
+def partition (a, begin, end) :
+    pivot = (begin + end) // 2
+    L = begin
+    R = end
+    while L < R :
+        while(a[L]< a[pivot] and L<R) : L += 1
+        while(a[R]>=a[pivot] and L<R) : R -= 1
+        if L < R :
+            if L==pivot : pivot = R
+            a[L], a[R] = a[R], a[L]
+    a[pivot], a[R] = a[R], a[pivot]
+    return R
+
+
+arr = [3, 5, 1, 2, 9, 6, 4, 7, 5]
+quickSort(arr,0,len(arr)-1)
+print(arr)

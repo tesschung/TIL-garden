@@ -1,0 +1,43 @@
+﻿BFS 알고리즘
+너비우선탐색은 탐색 시작점의 인접한 정점들을 먼저 모두 차례로 방문한
+후에, 방문했던 정점을 시작점으로 하여 다시 인접한 정점들을 차례로
+방문하는 방식
+인접한 정점들에 대해 탐색을 한 후, 차례로 다시 너비우선탐색을 진행해야
+하므로, 선입선출 형태의 자료구조인 큐를 활용함
+'''
+다음은 연결되어 있는 두 개의 정점 사이의 간선을 순서대로 나열 해 놓은
+것이다. 모든 정점을 너비우선탐색하여 화면에 너비우선탐색 경로를
+출력하시오. 시작 정점을 1로 시작하시오.
+ 1, 2, 1, 3, 2, 4, 2, 5, 4, 6, 5, 6, 6, 7, 3, 7
+ 출력 결과의 예는 다음과 같다.
+– 1-2-3-4-5-7-6
+'''
+def BFS(graph, v):# 그래프 G, 탐색 시작점 v
+    visit = list()
+    queue = list()
+
+    queue.append(v)
+    while queue: # 큐가 비어있지 않은 경우
+        node = queue.pop(0)# 큐의 첫번째 원소 반환
+        if node not in visit:# 방문되지 않은 곳이라면
+            # print("{} 미방문".format(node))
+            visit.append(node)# 방문한 것으로 표시
+            # queue.extend(graph[node])
+            # print("G[{}] {}".format(node,G[node]))
+            for i in range(1,len(G[node])):
+                # print("G[{}][{}] = {}".format(node,i,G[node][i]))
+                if G[node][i] and i not in visit and i not in queue: queue.append(i)
+            # print("queue=",queue)
+    return visit
+
+
+edges = [1, 2, 1, 3, 2, 4, 2, 5, 4, 6, 5, 6, 6, 7, 3, 7]
+result = []
+visited = [0] * 8
+G = [[0]* (8) for _ in range(8)] #정점간 연결정보를 저장하는 2차원 리스트
+
+for i in range(0, len(edges), 2): #짝수번쨰가 시작정점, 그 다음 숫자는 끝정점
+    G[edges[i]][edges[i+1]] = 1 #시작정점에서 끝정점을 갈 수 있음을 표시
+    G[edges[i+1]][edges[i]] = 1 #끝정점에서 시작정점으로 갈 수 있음을 표시
+result = BFS(G,1) #1번 정점부터 방문 시작
+print("-".join( [str(i) for i in result]))
