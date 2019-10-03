@@ -1,0 +1,7 @@
+// 발화에 대한 빅스비 동작의 정확성을 높이기 위하여 사용 (https://bixbydevelopers.com/dev/docs/dev-guide/developers/training.vocabulary)
+vocab(Near){
+ "Nearby"{
+    "근처"
+    "주변"
+  }
+}

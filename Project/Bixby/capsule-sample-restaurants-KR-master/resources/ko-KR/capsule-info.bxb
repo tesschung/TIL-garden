@@ -1,0 +1,12 @@
+capsule-info {
+  display-name  (맛집검색)
+  developer-name  (맛집검색)
+  icon-asset  (/img/bixby_launcher.png)
+  description ("간단한 맛집 검색 capsule 입니다")
+  website-url  (https://github.com/bixbydevelopers/capsule-sample-restaurants-KR)
+  terms-url  (https://github.com/bixbydevelopers/capsule-sample-restaurants-KR/blob/master/LICENSE)
+  dispatch-name (맛집검색)
+  search-keywords{
+    keyword (예제)
+  }
+}

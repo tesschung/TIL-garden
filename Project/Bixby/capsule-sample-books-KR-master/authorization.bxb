@@ -1,0 +1,14 @@
+authorization {
+  // Google book api에 대한 OAuth 권한을 얻은 후, OAuth_URI, client_id, client_secret, Token_URI를 알맞은 정보로 변경
+  // README를 참조
+  user {
+    oauth2-authorization-code (google){
+      authorize-endpoint (OAuth_URI)
+      client-id (client_id)
+      client-secret-key (secret) //client-secret은 team -> capsule에서 설정 (https://bixbydevelopers.com/dev/docs/reference/ref-topics/capsule-config#config-secrets)
+      scope (email profile openid https://www.googleapis.com/auth/books)
+      token-endpoint (Token_URI)
+    }
+  }
+}
+

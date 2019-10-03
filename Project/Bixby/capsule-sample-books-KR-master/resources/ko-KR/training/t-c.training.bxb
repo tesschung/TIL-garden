@@ -1,0 +1,5 @@
+train (t-cq4arlgpt3u7s6ii9qr3efkw8) {
+  utterance ([g:LogoutResult] 로그아웃 해줘)
+  plan (Y2BkkClILUktykrNz9NLys/PLtbzyU/PLy0JSi0uzSlhAAFGEAEA)
+  last-modified (1554701479769)
+}

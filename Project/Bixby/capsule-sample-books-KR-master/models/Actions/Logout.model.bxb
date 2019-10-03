@@ -1,0 +1,31 @@
+action (Logout) {
+  type(Constructor)
+  description (로그인 된 계정을 로그아웃 시킵니다)
+
+  output (LogoutResult) {
+    
+    throws {
+      error (NoLogIn){
+        on-catch {
+          halt {
+            dialog {
+              choose (Random) {
+                template("로그아웃 할 수 있는 계정이 없습니다.")
+                template("로그인 먼저 해주세요.")
+              }
+            }
+          }
+        }
+      }
+      error (LogoutFailed) {
+        on-catch {
+          halt {
+            dialog {
+              template("로그아웃 중 문제가 생겼습니다.")
+            }
+          }
+        }
+      }
+    }
+  }
+}

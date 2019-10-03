@@ -1,0 +1,53 @@
+// 여러 상황에서 사용될 수 있는 dialog template를 선언할 수 있습니다. (https://bixbydevelopers.com/dev/docs/dev-guide/developers/refining-dialog.dialog-macros)
+template-macro-def (result_answer) {
+  content {
+  choose (Random) {
+      template("여러가지 책 정보들을 가져왔어요.")
+      template("말씀하신 책과 관련된 결과를 가져왔어요.")
+    }
+  }
+}
+
+template-macro-def (no_result) {
+  content {
+    template("문제가 생겼네요. 다시 한번 말씀해주세요.")
+  }
+}
+
+template-macro-def (unstable) {
+  content {
+    template("현재 서비스가 불안정합니다. 이 서비스는 나중에 다시 사용하여 주세요.")
+  }
+}
+
+template-macro-def (result_getBooks) {
+  params{
+    param (counts){
+      type (core.Integer)
+    }
+  }
+  content {
+    if(!exists(counts)){
+      template("말씀하신 키워드로 검색을 해보았어요.")
+    }else{
+      if(counts >= 40){
+        template("총 #{counts}개의 결과 중 40개를 가져와보았어요.")
+      }else{
+        template("총 #{counts}개의 결과를 가져와보았어요.")
+      }     
+    }   
+  }
+}
+
+template-macro-def (result_getBook) {
+  params{
+    param (title){
+      type (core.Text)
+    }
+  }
+  content {
+    template("선택하신 책에 대한 자세한 정보입니다."){
+      speech ("#{title}에 대한 자세한 정보입니다.")
+    }  
+  }
+}

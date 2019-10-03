@@ -1,0 +1,5 @@
+train (t-1h8k7ryxa3eurfu2sacdg0rgu) {
+  utterance ("[g:Books] (알고리즘)[v:Keyword] 책 찾아줘")
+  plan (Y2BmEE6tSMwtyEnVS8rPzy7WcwKRDGKogu6pJRBxUVRx79TK8vyiFAYmBkYgZgCSjAwgwATBAA==)
+  last-modified (1547695012674)
+}

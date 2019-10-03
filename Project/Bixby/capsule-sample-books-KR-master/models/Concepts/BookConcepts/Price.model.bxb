@@ -1,0 +1,10 @@
+structure (Price) {
+  property (amount) {
+    type (money.CurrencyValue)
+    min (Optional) max (One)
+  }
+  property (currencyCode) {
+    type (money.CurrencyCode)
+    min (Optional) max (One)
+  }
+}

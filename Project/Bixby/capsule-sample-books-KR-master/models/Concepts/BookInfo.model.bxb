@@ -1,0 +1,51 @@
+structure (BookInfo) {
+  description (Information of Book)
+  property (title) {
+    type (BookTitle)
+    min (Optional) max (One)
+  }
+  property (authors) {
+    type (BookAuthors)
+    min (Optional) max (Many)
+  }
+  property (publisher) {
+    type (BookPublisher)
+    min (Optional) max (One)
+  }
+  property (publishedDate) {
+    type (BookPublishedDate)
+    min (Optional) max (One)
+  }
+  property (description) {
+    type (BookDescription)
+    min (Optional) max (One)
+  }
+  property (pageCount) {
+    type (BookPage)
+    min (Optional) max (One)
+  }
+  property (averageRating) {
+    type (BookAverageRating)
+    min (Optional) max (One)
+  }
+  property (ratingsCount) {
+    type (BookRatingsCount)
+    min (Optional) max (One)
+  }
+  property (printType) {
+    type (BookPrintType)
+    min (Optional) max (One)
+  }
+  property (categories) {
+    type (BookCategories)
+    min (Optional) max (Many)
+  }
+  property (imageLinks) {
+    type (BookImages)
+    min (Optional) max (One)
+  }
+  property (language) {
+    type (BookLanguage)
+    min (Optional) max (One)
+  }
+}

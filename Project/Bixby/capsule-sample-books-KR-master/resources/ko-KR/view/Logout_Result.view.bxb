@@ -1,0 +1,33 @@
+result-view {
+  match: LogoutResult(this)
+  
+  message {
+    template ("로그아웃이 성공적으로 이루어졌습니다.")
+  }
+  
+  render {
+    layout{
+      section{
+        content{
+          title-card{
+            title-area{
+              halign (Start)
+              slot1 {
+                text {
+                  style (Title_S)
+                  value ("로그아웃이 되었습니다.")
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  conversation-drivers{
+    conversation-driver{
+      template ("컴퓨터 공학 관련 책 찾아줘")
+    }
+  }
+}

@@ -1,0 +1,19 @@
+layout-macro-def (RestaurantList) {
+  params {
+    param (restaurant) {
+      type (Restaurant)
+      min (Required) max (One)
+    }
+  }
+  content {
+    cell-card {
+      slot2 {
+          content {
+              order (PrimarySecondary)
+              primary ("#{value(restaurant.name)}")
+              secondary ("[#{value(restaurant.location)}]")
+            }
+        }
+     }
+  }
+}

@@ -1,0 +1,23 @@
+structure (Book) {
+  description (Book Item Info)
+  property (kind) {
+    type (BookKind)
+    min (Optional) max (One)
+  }
+  property (id) {
+    type (BookID)
+    min (Optional) max (One)
+  }
+  property (detailLink){
+    type (URL)
+    min (Optional) max (One)
+  }
+  property (volume) {
+    type (BookInfo)
+    min (Optional) max (One)
+  }
+  property (sales) {
+    type (SalesInfo)
+    min (Optional) max (One)
+  }
+}

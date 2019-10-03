@@ -1,0 +1,32 @@
+action (GetBooks) {
+  type(Search)
+  description (google API로부터 책들의 정보 리스트를 가져옵니다)
+  collect {
+    input (keyword) {
+      type (Keyword)
+      min (Required) max (One)
+    }
+  }
+  output (Books){
+   throws {
+      error (ServerProblem) {
+        on-catch {
+          halt {
+            dialog {
+              template-macro (unstable)
+            }
+          }
+        }
+      }
+      unknown-error {
+        on-catch {
+          halt {
+            dialog {
+              template-macro (no_result)
+            }
+          }
+        }
+      }
+    }
+  }
+}

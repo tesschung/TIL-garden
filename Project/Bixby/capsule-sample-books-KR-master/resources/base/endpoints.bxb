@@ -1,0 +1,25 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (GetBooks) {
+      accepted-inputs (keyword)
+      local-endpoint (GetBooks.js)
+      authorization{
+        user
+      }
+    }
+    action-endpoint (GetBookDetailByURL) {
+      accepted-inputs (detailURL)
+      local-endpoint (GetBookDetailByURL.js)
+      authorization{
+        user
+      }
+    }
+    action-endpoint (Logout) {
+      accepted-inputs ($vivContext)
+      local-endpoint (Logout.js)
+      authorization{
+        user
+      }
+    }
+  }
+}

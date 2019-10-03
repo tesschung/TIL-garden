@@ -1,0 +1,9 @@
+result-view {
+  match: URL (this)
+  
+  message()
+  // 앱을 실행합니다. (https://bixbydevelopers.com/dev/docs/reference/type/result-view.app-launch)
+  app-launch {
+    payload-uri ("#{value(this)}")
+  }
+}

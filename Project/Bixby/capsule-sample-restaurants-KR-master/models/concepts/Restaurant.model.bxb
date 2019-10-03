@@ -1,0 +1,32 @@
+structure (Restaurant) {
+  description (레스토랑 정보를 담는 structure입니다)
+  property (username) {
+    type (UserName)
+    min (Optional) max (One)
+  }
+  
+  property (name) {
+    type (RestaurantName)
+    min (Required) max (One)
+  }
+  
+  property (location) {
+    type (Location)
+    min (Required) max (One)
+  }
+  
+  property (url) {
+    type (URL)
+    min (Required) max (One)
+  }
+  
+  property (point) {
+    type (Point)
+    min (Required) max (One)
+  }
+  
+  property (flag) {
+    type (core.Boolean)
+    min (Required) max (One)
+  }
+}

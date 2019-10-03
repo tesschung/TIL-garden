@@ -1,0 +1,7 @@
+hints {
+  uncategorized {
+    hint (맛집검색에서, 맛집 보여줘)
+    hint (맛집검색에서, 주변 맛집 찾아줘)
+    hint (맛집검색에서, 내 위치 어디야)
+  }
+}

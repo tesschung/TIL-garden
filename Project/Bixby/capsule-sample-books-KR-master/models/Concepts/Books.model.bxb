@@ -1,0 +1,20 @@
+structure (Books) {
+  description (Total Book Search Result)
+  property (kind) {
+    type (BookKind)
+    min (Optional) max (One)
+  }
+  property (totalItems) {
+    type (core.Integer)
+    min (Optional) max (One)
+  }
+  property (query) {
+    type (URL)
+    min (Optional) max (One)
+  }
+  property (book) {
+    type (Book)
+    min (Optional) max (Many)
+  }
+  
+}

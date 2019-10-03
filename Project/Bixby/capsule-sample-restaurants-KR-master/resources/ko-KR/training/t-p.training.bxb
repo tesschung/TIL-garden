@@ -1,0 +1,5 @@
+train (t-pjd5nb9ws4nmtqmavrb84bllm) {
+  utterance ([g:GetReversePoint] 내 위치 어디야)
+  plan (Y2BiEC/LLNNLT83Xc0/NT85PSU1xTEkpSi0uZlBOrUjMLchJ1QPyShJLixLzSoqBikqCUstSi4pTA/Iz80oYGIGQAYqBJAA=)
+  last-modified (1560831743565)
+}

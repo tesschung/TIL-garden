@@ -1,0 +1,5 @@
+train (t-s1ftgpj07hp25nvsrb99rcgq8) {
+  utterance ([g:Restaurant] 맛집 보여줘)
+  plan (Y2BkkEutSMwtyEnVK0otLkksLUrMKynWC4KzGUCAEUQAAA==)
+  last-modified (1554425470506)
+}

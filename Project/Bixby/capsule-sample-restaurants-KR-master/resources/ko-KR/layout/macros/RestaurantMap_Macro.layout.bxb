@@ -1,0 +1,45 @@
+// map-card UI (https://bixbydevelopers.com/dev/docs/reference/type/layout-macro-def.content.map-card)
+layout-macro-def (RestaurantMap) {
+  params {
+    param (info) {
+      type (Restaurant)
+      min (Required) max (One)
+    }
+  }
+  content {
+    section{
+      content{
+        map-card{
+          aspect-ratio(16:9)
+          title-area{
+            slot1{
+              text{
+                value("#{value(info.name)}")
+                style(Title_L)
+              }
+            }
+            slot2{
+              single-line{
+                text{
+                  value("#{value(info.location)}")
+                }
+              }
+            }
+          }
+          markers{
+            marker{
+              geo (info.point.point)
+              icon("/img/red-marker.png")
+              width (15)
+              height (20)
+              anchor-x (5)
+              anchor-y (15)
+              rotation (0)
+            }
+          }
+          zoom(15)
+        }
+      }
+    }
+  }
+}

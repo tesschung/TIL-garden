@@ -1,0 +1,46 @@
+// 결과 화면에 대한 보여주는 방식을 설정합니다. (https://bixbydevelopers.com/dev/docs/reference/type/result-view)
+result-view {
+  // 결과 화면을 보여주고 싶은 output concept을 지정합니다.
+  match: Book(this)
+  
+  message {
+    // 결과 화면에 보여줄 dialog를 설정합니다.
+    if(!exists(this)){
+      template-macro (no_result)
+    }else{
+      template-macro (result_getBook) {
+        param (title){
+          if(exists(this.volume.title)){
+            expression (this.volume.title)
+          }
+        }
+      }
+    } 
+  }
+  
+  render {
+    // 어떻게 화면을 그릴 것인가에 대하여 설정합니다.
+    if(exists(this)){
+      layout-macro (BookInfo) {
+        param (info) {
+          expression (this) // 결과 객체를 layout으로 전달합니다.
+        }
+      }
+    }
+  }
+  
+  // 결과 화면 하단에 다음에 이어질 수 있는 발화를 알려줍니다.(https://bixbydevelopers.com/dev/docs/dev-guide/developers/enhancing-UX.conversation-drivers)
+  // continuation 발화를 하시려면 training에서 continiation-of를 사용하셔야 합니다.
+  // 참조(https://bixbydevelopers.com/dev/docs/dev-guide/developers/training.intro-training#add-training-examples-for-continuations)
+  conversation-drivers {
+    if(exists(this)){
+      if(this.sales.saleability == true){
+        conversation-driver {
+          template ("이 책 살래")
+        }
+      }
+    }
+  } 
+}
+
+  

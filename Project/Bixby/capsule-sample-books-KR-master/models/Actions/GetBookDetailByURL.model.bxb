@@ -1,0 +1,32 @@
+action (GetBookDetailByURL) {
+  description (Google API로부터 책 정보를 가져옵니다)
+  type(Constructor)
+  collect {
+    input (detailURL) {
+      type (URL)
+      min (Required) max (One)
+    }
+  }
+  output (Book){
+   throws {
+      error (ServerProblem) {
+        on-catch {
+          halt {
+            dialog {
+              template-macro (unstable)
+            }
+          }
+        }
+      }
+      unknown-error {
+        on-catch {
+          halt {
+            dialog {
+              template-macro (no_result)
+            }
+          }
+        }
+      }
+    }
+  }
+}

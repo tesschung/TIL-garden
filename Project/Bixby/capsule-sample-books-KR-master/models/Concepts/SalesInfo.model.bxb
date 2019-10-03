@@ -1,0 +1,27 @@
+structure (SalesInfo) {
+  description (Sales Info about Book)
+  property (country) {
+    type (SalesCountry)
+    min (Optional) max (One)
+  }
+  property (saleability) {
+    type (SalesAbility)
+    min (Optional) max (One)
+  }
+  property (isEbook) {
+    type (SalesEbook)
+    min (Optional) max (One)
+  }
+  property (buyLink) {
+    type (SalesLink)
+    min (Optional) max (One)
+  }
+  property (listPrice) {
+    type (SalesListPrice)
+    min (Optional) max (One)
+  }
+  property (retailPrice) {
+    type (SalesRetailPrice)
+    min (Optional) max (One)
+  }
+}

@@ -1,0 +1,32 @@
+// 실제로 UI를 그리는 파일 (https://bixbydevelopers.com/dev/docs/dev-guide/developers/building-views.layout-macros)
+// Bixby에서 사용 가능 UI 리스트 (https://bixbydevelopers.com/dev/docs/reference/type/layout-macro-def.content)
+layout-macro-def (RestaurantInfo) {
+  params {
+    param (info) {
+      type (Restaurant)
+      min (Required) max (One)
+    }
+  }
+  content {
+    section{
+      title{
+        template ("맛집 정보")
+      }
+      content{
+        cell-card{
+          slot2{
+            content{
+              primary("웹에서 보기")
+            }
+          }
+          on-click{
+            intent{
+              goal: OpenBrowser
+              value: $expr(info.url)
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+structure (SalesListPrice){
+  extends (Price)
+}

@@ -1,0 +1,44 @@
+action (OpenBrowser) {
+  description (웹브라우저를 통하여 URL에 접속합니다)
+  type(Constructor)
+  
+  collect {
+    input (url) {
+      type (URL)
+      min (Optional) max (One)
+    }
+    input (bookInfo) {
+      type (Book)
+      min (Optional) max (One)
+      validate{
+        if(exists(bookInfo) && (bookInfo.sales.saleability != true)){
+          halt{
+            dialog{
+              template ("이 책은 현재 구매할 수 없습니다.")
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  output (URL){
+    // 일반적으로 action에는 항상 action의 output을 만들기 위한 JS 코드가 필요
+    // 하지만 output이 input을 그대로 전달하는 식의 간단한 logic이라면 evaluate 기능을 사용해서 JS 코드 없이 action을 수행 가능
+    // 참조 (https://bixbydevelopers.com/dev/docs/reference/type/action.output.evaluate)
+    evaluate{
+      if(exists(url)){
+        $expr(url)
+      }else-if(bookInfo.sales.saleability){
+        $expr(bookInfo.sales.buyLink)
+      }
+    }
+    on-empty{
+      halt{
+        dialog{
+          template ("구매할 수 있는 책이 없습니다.")
+        }
+      }
+    }
+  }
+}

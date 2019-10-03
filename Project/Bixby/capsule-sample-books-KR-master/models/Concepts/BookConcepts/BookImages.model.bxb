@@ -1,0 +1,3 @@
+text (BookImages) {
+  extends (URL)
+}

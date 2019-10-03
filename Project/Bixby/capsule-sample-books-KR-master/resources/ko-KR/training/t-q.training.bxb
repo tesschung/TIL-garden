@@ -1,0 +1,5 @@
+train (t-q5h8vjfu7cnqvk5d1zzocbwdo) {
+  utterance ("[g:Books] (컴퓨터 공학)[v:Keyword] 관련 책 찾아줘")
+  plan (Y2BmEC1ILUktykrNz9NLys/PLtZzApEMEujC7qklEBlxdBnv1Mry/KIUBiYGRiBmAJKMDCDABMEA)
+  last-modified (1554699591477)
+}

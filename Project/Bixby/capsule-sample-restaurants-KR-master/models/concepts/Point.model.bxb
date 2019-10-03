@@ -1,0 +1,5 @@
+structure (Point) {
+  description (위도, 경도를 저장하는 geo 캡슐의 NamedPoint를 복제하였습니다)
+  // 참조 (https://bixbydevelopers.com/dev/docs/dev-guide/developers/library.geo#points)
+  role-of (geo.NamedPoint)
+}
