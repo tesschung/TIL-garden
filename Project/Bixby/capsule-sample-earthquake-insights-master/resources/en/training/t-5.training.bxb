@@ -1,0 +1,5 @@
+train (t-52okpo90rdw79mxrw0bafmi6k) {
+  utterance ("[g:FindEarthquakes] find earthquakes near (Lake Merritt)[v:geo.SearchTerm] that happened (last year)[v:time.DateTimeExpression]")
+  plan (jYy7DoJAEEWv4KM3dtbGxGITf8EIia3yAxuZwER2wd2FUPntLhBRG+NU5565M1hgQ61UVUGCpHH5vZY3OmnLWe6siEaF3Y9azDp9Vy32/3cfrKvaWawabkRGpbj4m2t+poxLje3LHmou0s9VbEo15ISMwvL7vHfrzjlWJI7SUeIhaitD1naf55ggQIgpZp4xpsAT+jxM6KlvPAE=)
+  last-modified (1561143757351)
+}

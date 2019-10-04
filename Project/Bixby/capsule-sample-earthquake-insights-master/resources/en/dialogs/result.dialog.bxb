@@ -1,0 +1,6 @@
+dialog (Result) {
+  match: Earthquake (this) {
+    from-output: FindEarthquakes (findEQ)   
+    }
+  template ("[I found these earthquakes in #{value(findEQ.searchRegion)}]")
+}

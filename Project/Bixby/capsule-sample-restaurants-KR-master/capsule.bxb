@@ -26,6 +26,8 @@ capsule {
     import (viv.core){ as (core) version-from (entity)}
     import (viv.common) { as (common) version-from (entity) }
     import (viv.geo) { as (geo) version-from (entity) }
+    // geo capsule
     import (viv.self) { version(3.5.122) as (self) }
+    // user self
   }
 }

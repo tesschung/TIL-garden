@@ -1,0 +1,4 @@
+decimal (MinMagnitude) {
+  description (Minimum magnitude of an earthquake)
+  role-of(Magnitude)
+}

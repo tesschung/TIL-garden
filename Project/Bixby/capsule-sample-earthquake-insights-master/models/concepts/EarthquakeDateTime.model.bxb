@@ -1,0 +1,4 @@
+structure (EarthquakeDateTime) {
+  description (Earthquake date and time)
+  role-of(time.DateTime)
+}

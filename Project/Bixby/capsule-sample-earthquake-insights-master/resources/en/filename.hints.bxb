@@ -1,0 +1,7 @@
+hints {
+	uncategorized {
+		hint (ask earthquake insights, find earthquakes near me)
+		hint (with earthquake insights, what earthquakes happened in Oakland in the last 3 months)
+		hint (in earthquake insights, show earthquakes in San Jose in 2017 with magnitude between 2.5 and 7.0)
+	}
+}

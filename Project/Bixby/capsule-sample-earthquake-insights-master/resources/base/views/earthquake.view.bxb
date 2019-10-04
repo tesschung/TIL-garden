@@ -1,0 +1,23 @@
+result-view {
+  match: Earthquake(earthquake)
+  
+  render {
+    if (size(earthquake) > 1) {
+      list-of (earthquake) {       
+        has-details (true)  
+        where-each (item) {    
+          layout-macro (earthquake-thumbnail-card) {
+            param (earthquake) {
+              expression (item)
+            }
+          }         
+        }
+      }
+    }
+    else-if (size(earthquake) == 1) {
+      layout-match (earthquake) {
+        mode (Details)
+      }
+    }
+  }
+}

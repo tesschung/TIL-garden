@@ -1,0 +1,5 @@
+train (t-1z1xu8zlrzkdtwvxx4jfcqkhr) {
+  utterance ("[g:FindEarthquakes] find earthquakes in (Los Angeles)[v:geo.SearchTerm]")
+  plan (Y2BjUE2tSMwtyEnVS00sKskoLE3MTvXMK85Mzygp1nOFCzFo4VHmlpmXglBazGBIvNq6zLyC0pJiBpGyzDK99NR8vWCgnuSMoNT0zPw8BnWYqFNpZk4KspRbUX4uhB+SWpTLIISqHSzGysDIwMTAzMACZDHA2YwMDGAeCDABaaAcAA==)
+  last-modified (1561147340901)
+}

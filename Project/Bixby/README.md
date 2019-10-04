@@ -12,7 +12,7 @@ Requirement for Bixby project:
 
 ## 1강
 
-### action
+### Action
 
 - action (action name)
 - type (action type) : 액션 검색시 힌트
@@ -22,23 +22,126 @@ Min(required) -> 반드시 발화안에 없으면 되물음
 
 Max(one, many)
 
-### concept
+### concepts는 2종류
 
-1. Primitives (자료형)
+1. **Primitives** (자료형): simple types, like text or numbers
 
-- boolean
-- decimal
-- integer
-- Enum (열거가능한문자열을 저장하는 타입)
-- name (짧은 문자열을 저장하는 타입)
-- Text
+- `boolean`: A binary variable with two possible values, `true` and `false`.
 
-1. Structure
+- `decimal`: A floating-point number, positive or negative. This type allows a decimal part.
+- `enum`: An enumeration of a fixed set of possible values (symbols). Use this when it makes sense to list all the possible values in advance. (Also see [structure enums](https://bixbydevelopers.com/dev/docs/dev-guide/developers/modeling.modeling-concepts#structure-enums).)
+  - If there is no [vocab](https://bixbydevelopers.com/dev/docs/dev-guide/developers/training.vocabulary) file, the enums will not be recognized by natural language.
 
+- `integer`: A whole number, positive or negative, with no decimals.
+- `name`: A Unicode string that is available to Bixby. Use this when the string might be part of natural language input, dialog, or [vocabulary](https://bixbydevelopers.com/dev/docs/dev-guide/developers/training.vocabulary#adding-vocabulary). Examples include business names, menu items, and movie titles.
+- `qualified`: A `name` that matches a regular expression. This is a good choice when you want to validate a string, and want it to be visible to Bixby, but can't enumerate every possible value in advance. The regex also makes it easier for Bixby to recognize valid values.
+- `text`: A Unicode string that is **not** available for use with [vocabulary](https://bixbydevelopers.com/dev/docs/dev-guide/developers/training.vocabulary#adding-vocabulary), although it can be displayed or passed to external services. This is good for URLs, blocks of XML or JSON, and large blocks of text such as movie or restaurant reviews.
+
+```python
+boolean (SeatHasPower) {
+  description (콘센트 있는 좌석이야?)
+}
+
+decimal (CurrencyValue) {
+  description (The value part of the currency.)
+}
+
+enum (Season) {
+  description (Names of the seasons)
+  symbol (Spring)
+  symbol (Summer)
+  symbol (Autumn)
+  symbol (Winter)
+}
+
+integer (Quantity) {
+  description (How many to buy.)
+}
+
+name (BusinessName) {
+  description (The name of a business.)
+}
+
+qualified (PhoneNumber) {
+  description (A string representing a phone number.)
+  regex-pattern ("\\+?1? ?-? ?((\\(\\d\\d\\d\\))|\\d\\d\\d)? ?-? ?\\d\\d\\d ?-? ?\\d\\d\\d\\d")
+}
+
+text (MapUrl) {
+  description (Contains an URL to a map of the business)
+  extends (entity.EntityUrl)
+}
+```
+
+
+
+### TEXT
+
+### Child Keys
+
+description
+optional
+Adds text describing the primitive concept, which is useful in describing how a primitive can be used
+
+equivalence
+optional
+A primitive equivalence policy specifies how the system should compare two instances of the same concept
+
+extends
+optional
+Extends a parent concept with a new child concept, which inherits all of the parent properties
+
+features
+optional
+Marks a concept with special concept features for user preferences, privacy, or security
+
+named-consumer
+optional
+Named consumers allow explicitly linking a concept to an action
+
+role-of
+optional
+There are cases where you want to assign a specific role to a feature, but not extend the feature
+
+#### text안의 child-key중 하나 role-of
+
+Role assignment
+
+ can give a concept the `role-of` another concept to change its behavior based solely on context.
+
+특정 라이브러리에서 불러올때, 그 라이브러리가 가지는 concept의 사용방법을 맥락에 따라 바꾸기 위해 role-of 지정
+
+```python
+structure (Point) {
+  description (위도, 경도를 저장하는 geo 캡슐의 NamedPoint를 복제하였습니다)
+  // 참조 (https://bixbydevelopers.com/dev/docs/dev-guide/developers/library.geo#points)
+  role-of (geo.NamedPoint)
+}
+```
+
+
+
+1. **Structure**: more complex, representing records with named properties
+
+    -> python에서 OOP하는것과 동일하게 생각하면된다. class짜는것, Primitives는 각 property들이고, 또 다른 것들의 class가 될 수 있다.
+
+- structure가 갖게되는 property또한 스스로 의미를 갖고 있기때문에 concept로 분류한다.
 - c의 구조체
 - structure안에 property가 있음. structure에서 사용될 concept이름을 지정
 - Type: concept이름
 - Min&max 해당 structure에서 가질 수 있는 이 concept의 개수
+
+
+
+### Extensions
+
+- can `extend` a parent concept with a new child concept. 
+
+### Lazy Properties
+
+
+
+
 
 ---
 
@@ -81,8 +184,6 @@ Endpoints 종류:
 
 api를 호출하여 받아오는 데이터를 출력하는 output 컨셉필요
 
-
-
 ---
 
 Library capsule
@@ -90,6 +191,26 @@ Library capsule
 개발팀에서 지원
 
 computed-input -> 사용자에게 보이지 않고 빅스비 내부적으로 사용, 개인민감성 정보
+
+---
+
+Geo Capsule
+
+https://github.com/bixbydevelopers/capsule-sample-earthquake-insights
+
+Geo Library
+
+https://bixby.developer.samsung.com/newsroom/en-us/When-and-Where-Mastering-DateTime-and-Geo-Libraries
+
+https://bixby.developer.samsung.com/newsroom/ko-kr/21/05/2019/Bixby
+
+Centroid: `centroid` in `Address` is [lazily sourced](https://bixbydevelopers.com/dev/docs/dev-guide/developers/modeling.modeling-concepts.lazy-properties) when there is sufficient information in other properties to determine a specific `GeoPoint`.
+
+fetch 가져오는 action
+
+Geo 라이브러리 사용해서
+
+예술의 전당을 검색하면 지도를 주도록 하기
 
 
 

@@ -1,0 +1,8 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (FindEarthquakes) {
+      accepted-inputs (dateTimeExpression, searchRegion, minMagnitude, maxMagnitude, approxMagnitude)
+      local-endpoint ("FindEarthquakes.js")
+    }
+  }
+}

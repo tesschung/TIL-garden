@@ -1,0 +1,46 @@
+action (FindEarthquakes) {
+  description (Search for earthquakes based on different input parameters)
+  type (Search)
+  collect {
+    input-group (inputs) {
+      requires (ZeroOrMoreOf)
+      collect {
+        input (dateTimeExpression) {
+          type (time.DateTimeExpression)
+          min (Optional) max (One)
+        }
+        input (searchRegion) {
+          type (geo.SearchRegion)
+          min (Optional) max (One)
+          default-select {
+            with-learning
+            with-rule {
+              select-first
+            }
+          }
+          // default-init {
+          //   if ($user.currentLocation.$exists) {
+          //     intent {
+          //       goal: geo.SearchRegion
+          //       value-set: geo.CurrentLocation { $expr ($user.currentLocation) }
+          //     }
+          //   }
+          // }
+        }
+        input (minMagnitude) {
+          type (MinMagnitude)
+          min (Optional) max (One)
+        }
+        input (maxMagnitude) {
+          type (MaxMagnitude)
+          min (Optional) max (One)
+        }
+        input (approxMagnitude) {
+          type (ApproxMagnitude)
+          min (Optional) max (One)
+        }
+      }
+    }
+  }
+  output (Earthquake)
+}

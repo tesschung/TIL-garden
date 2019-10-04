@@ -1,0 +1,10 @@
+train (t-h4btefg1qjaqxgrxe2cwhljsu) {
+  utterance ("[g:FindEarthquakes] Show earthquakes that occurred in (California)[v:geo.SearchTerm]")
+  plan (Y2BjUE2tSMwtyEnVS00sKskoLE3MTvXMK85Mzygp1nOFCzFo4VHmlpmXglBazGBIvNq6zLyC0pJiBpGyzDK99NR8vWCgnuSMoNT0zPw8BnWYqFNpZk4KspRbUX4uhB+SWpTLIISqHSzGysDIwMTAzMACZDHA2YwMDGAeCDABaaAcAA==)
+  last-modified (1561061402391)
+}
+train (t-hv9rtb25rm2qvihyl4s206sf9) {
+  utterance ([g:FindEarthquakes] Find earthquakes)
+  plan (Y2BiUE2tSMwtyEnVS00sKskoLE3MTvXMK85Mzygp1nOFCzFo4VHmlpmXglBazMAIhAxQDCQB)
+  last-modified (1561061413809)
+}

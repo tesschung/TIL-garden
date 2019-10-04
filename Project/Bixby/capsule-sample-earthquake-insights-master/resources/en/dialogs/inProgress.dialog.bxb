@@ -1,0 +1,4 @@
+dialog (Progress) {
+  match: Earthquake (earthquake)
+  template("Checking for earthquakes based on your search criteria...")
+}

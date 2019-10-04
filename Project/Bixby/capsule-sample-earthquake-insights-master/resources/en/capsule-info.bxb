@@ -1,0 +1,10 @@
+capsule-info {
+	display-name (Earthquake Insights)
+	developer-name (Viv Labs)
+	icon-asset (icon3.png)
+	description ("Find earthquakes")
+	search-keywords {
+		keyword (Earthquake)
+	}
+	dispatch-name (earthquake insights)
+}

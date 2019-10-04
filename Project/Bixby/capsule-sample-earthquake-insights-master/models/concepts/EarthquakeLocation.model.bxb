@@ -1,0 +1,4 @@
+structure (EarthquakeLocation) {
+  description (Location of the Earthquake)
+  role-of(geo.GeoPoint)
+}

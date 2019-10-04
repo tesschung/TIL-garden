@@ -1,0 +1,10 @@
+train (t-l8gtwr9azkdywpwka6dgn5u4q) {
+  utterance ("[g:FindEarthquakes] What earthquakes happened in (China)[v:geo.SearchTerm] with magnitude greater than {[g:MinMagnitude] (5.0)[v:Magnitude]}")
+  plan (jYtNDoIwEIUfgj9r4xE0JC6aeAUTSVywUS/QyAQmQkHaEleeXSyKuiHOZuZ98z3MsKKbLKqcBMnaZFcrL7RXmtPMaLHrEdYDWsQq+agam//dO6vKGo1woBKzimWq2NiEsBwSe2vRcCNSKsWx1c7ZgVIuFcI33VrOk+9XVJdFl09UF5j/1h2bwsMIPgKMMWkTXnnksofnBI52l9c6vtv+Aw==)
+  last-modified (1561061431349)
+}
+train (t-luq8o5jqwhyuqou8gvw5fhw7g) {
+  utterance ("[g:FindEarthquakes] What earthquake happened in (Nepal)[v:geo.SearchTerm] on (April 25, 2015)[v:time.DateTimeExpression]")
+  plan (jYy7DoJAEEWv4KM3dtbGxGITf8EIia3yAxuZwER2wd2FUPntLhBRG+NU5565M1hgQ61UVUGCpHH5vZY3OmnLWe6siEaF3Y9azDp9Vy32/3cfrKvaWawabkRGpbj4m2t+poxLje3LHmou0s9VbEo15ISMwvL7vHfrzjlWJI7SUeIhaitD1naf55ggQIgpZp4xpsAT+jxM6KlvPAE=)
+  last-modified (1561061440483)
+}

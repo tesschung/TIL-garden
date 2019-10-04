@@ -1,0 +1,9 @@
+decimal (Magnitude) {
+  description (The magnitude of an earthquake)
+  features {  
+    recognized-range {
+      min-value(0)
+      max-value(12)
+    }
+  }
+}

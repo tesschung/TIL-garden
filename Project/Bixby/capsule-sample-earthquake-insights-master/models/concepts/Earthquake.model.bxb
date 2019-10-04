@@ -1,0 +1,20 @@
+structure (Earthquake) {
+  description (An earthquake)
+
+  property (title) {
+    type (Title)
+    min (Optional) max (One)
+  }  
+  property (dateTime) {
+    type (EarthquakeDateTime)
+    min (Optional) max (One)
+  }
+  property (location) {
+    type (EarthquakeLocation)
+    min (Optional) max (One)
+  }  
+  property (magnitude) {
+    type (Magnitude)
+    min (Optional) max (One)
+  }  
+}
