@@ -1,4 +1,4 @@
-Memoization 방법을 적용한 알고리즘
+﻿Memoization 방법을 적용한 알고리즘
 메모이제이션(memoization)은 컴퓨터 프로그램을 실행할 때 
 이전에 계산한 값을 메모리에 저장해서 매번 다시 계산하지 않도록 하여 전체적인 실행속도를 빠르게 하는 기술이다. 
 동적 계획법의 핵심이 되는 기술이다.
@@ -31,3 +31,5 @@ def fibo2(n):
     # return f[n]
     return f
 print( "DP", fibo2(10) )
+
+

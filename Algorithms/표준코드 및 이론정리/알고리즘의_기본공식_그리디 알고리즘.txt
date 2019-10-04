@@ -1,0 +1,35 @@
+﻿그리디 알고리즘 
+탐욕 알고리즘은 최적해를 구하는 데 사용되는 근시안적인 방법.
+일반적으로, 머리 속에 떠오르는 생각을 검증 없이 바로 구현하면 Greedy
+접근이 된다.
+대부분이 가장 큰값부터 적용하여 차츰 작은 값을 적용해 나간다. 또는 
+가장 작은 값부터 적용하여 점차 큰 값을 적용해 나간다.
+
+예제 - 동전 지불 
+문제 : 지불해야 하는 값이 362원 일 때 1원 50원 100원 짜리 동전으로 동전의 수가 가장 적게 지불하시오. 
+해결책 : 일단 큰 단위의 동전부터 적용시켜본다. 잔액에 대해서 최대한 큰 단위를 적용해 나간다.
+def min_calc(value, coin):
+    a=[]
+    for i in coin:
+        a.append([value-i, i])
+    res = a[0]
+    for i in a:
+        if res[0] > i[0] and i[0] > 0:
+            res = i
+    return res
+    
+coin = [1,50,100]
+value = [362, 0]
+dic = {}
+for i in coin:
+    dic[i] = 0
+    
+while True:
+    value = min_calc(value[0],coin)
+    if value[0] < 0:
+        break
+    else:
+        dic[value[1]] += 1
+
+print(dic)
+
