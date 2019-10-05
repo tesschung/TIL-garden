@@ -13,7 +13,7 @@ function getDistance(lat1,lon1,lat2,lon2) {
   
   return d;
 }
-
+// d를 리턴해서 주변을 줌
 function deg2rad(deg) {
   return deg * (Math.PI/180)
 }

@@ -141,6 +141,28 @@ structure (Point) {
 
 
 
+### JavascriptAPI/http requests
+
+https://bixbydevelopers.com/dev/docs/reference/JavaScriptAPI/http
+
+### http.getUrl(url, options)
+
+Perform an HTTP GET request. By default, the return value is a string (equivalent to setting the `format`option to `text`); this can be changed by using a different `format` option in the [`options`](https://bixbydevelopers.com/dev/docs/reference/JavaScriptAPI/http#http-options) argument.
+
+**Kind**: Static method of `http`
+**Access**: Public
+
+| Param     | Type     | Description                                                  |
+| :-------- | :------- | :----------------------------------------------------------- |
+| *url*     | `String` |                                                              |
+| *options* | `Object` | See [HTTP options](https://bixbydevelopers.com/dev/docs/reference/JavaScriptAPI/http#http-options) |
+
+For an example of using `http.getUrl()`, read [Calling a Web Service from a Local Endpoint](https://bixbydevelopers.com/dev/docs/dev-guide/developers/actions.configuring-endpoints#calling-a-web-service-from-a-local-endpoint).
+
+### 
+
+
+
 
 
 ---
@@ -351,9 +373,6 @@ https://drive.google.com/file/d/1oPZ2hY1X2EKgyWcsPU3VZ-DgC4t2_njT/view
 
 
 
-금요일에 4-5시에 문서로된것 들고와서 이야기
+https://www.kopis.or.kr/mob/cs/kopis/kopis.do
 
-포인트정리 해서 오기
-
-
-
+Data 수집용
