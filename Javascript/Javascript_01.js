@@ -181,7 +181,6 @@ console.write(people[0]);
 // bucky가 나올것, people이라는 배열에 인덱스로 접근가능하다.
 
 
-
 // var => function-scope 
 // let, const => block-scope 
 // let은 재할당 가능
