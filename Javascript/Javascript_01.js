@@ -181,6 +181,10 @@ console.write(people[0]);
 // bucky가 나올것, people이라는 배열에 인덱스로 접근가능하다.
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 63ca761ca5cbfb3924ed7270e711399c464065e8
 // var => function-scope 
 // let, const => block-scope 
 // let은 재할당 가능
