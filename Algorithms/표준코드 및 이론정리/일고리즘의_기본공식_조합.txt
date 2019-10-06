@@ -1,0 +1,16 @@
+﻿# 재귀 호출을 이용한 조합 생성 알고리즘
+# an[] : n개의 원소를 가지고 있는 배열
+# tr[] : r개의 크기의 배열, 조합이 임시 저장될 배열
+def comb(n, r):
+    if r == 0 : print(tr)
+    elif n < r : return
+    else:
+        tr[r - 1] = an[n - 1]
+        comb(n - 1, r - 1)
+        comb(n - 1, r)
+
+an=list('abcde')
+n=len(an)
+r=2
+tr=[0]*r
+comb(n,r)

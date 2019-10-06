@@ -376,3 +376,18 @@ https://drive.google.com/file/d/1oPZ2hY1X2EKgyWcsPU3VZ-DgC4t2_njT/view
 https://www.kopis.or.kr/mob/cs/kopis/kopis.do
 
 Data 수집용
+
+
+
+
+
+
+
+배포방법
+
+1. 팀 등록
+
+   https://bixbydevelopers.com/dev/marketplace
+
+2. 팀원 등록
+3. 
