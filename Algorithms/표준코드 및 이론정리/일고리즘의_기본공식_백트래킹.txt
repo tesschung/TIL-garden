@@ -1,0 +1,60 @@
+﻿백트래킹 기법
+ 어떤 노드의 유망성을 점검한 후에 유망(promising)하지 않다고 결정되면 그 노드의
+부모로 되돌아가(backtracking) 다음 자식 노드로 감.
+ 어떤 노드를 방문하였을 때 그 노드를 포함한 경로가 해답이 될 수 없으면 그 노드는
+유망하지 않다고 하며, 반대로 해답의 가능성이 있으면 유망하다고 한다.
+ 가지치기(pruning): 유망하지 않는 노드가 포함되는 경로는 더 이상 고려하지 않는다.
+
+백트래킹을 이용한 알고리즘은 다음과 같은 절차로 진행된다.
+① 상태 공간 트리의 깊이 우선 검색을 실시한다.
+② 각 노드가 유망한지를 점검한다.
+③ 만일 그 노드가 유망하지 않으면, 그 노드의 부모 노드로 돌아가서 검색을 계속한다.
+
+def checknode (v) : # node
+	if promising(v) :
+		if there is a solution at v :
+			write the solution
+		else :
+			for u in each child of v :
+				checknode(u)
+
+--------------------------
+암기해야할 예제
+--------------------------
+백트래킹을 이용한 nQueen 구하기
+----------------------------------------------------------------------------
+n = 5 # 한변의 길이
+ans = 0 # 배치가능한 퀸의 갯수
+
+def isPossible(row):
+    for i in range(1,row):
+        if col[i] == col[row]: #
+            # print("col[{}] == col[{}] {}=={}".format(i,row,col[i],col[row]))
+            return False
+        if (col[i]-col[row])**2 == (i-row)**2:
+            # print("(col[{}]-col[{}])**2 and ({}-{})**2 {}-{}".format(i,row,i,row,col[i],col[row]))
+            return False
+    # print("True col",col)
+    return True
+
+def dfs(row):
+    global ans #
+    if row>n: #확인하려는 행번호가 전체행을 넘어가면 중복되지 않은 배치임
+        ans += 1 # 배치횟수 증가
+        return
+    for i in range(1,n+1): # 칼럼 번호
+        col[row] = i # 현재행에 칼럼번호를 1~N까지 대입
+        if isPossible(row): # 현재행에 지정된 칼럼이 옳은가 검사
+            dfs(row+1) # 현재행의 칼럼번호가 옳으면 다음행을 검사한다.
+        else:
+            col[row]=0 # 현재행의 칼럼번호 i를 쓸 수 없으면 0
+
+for i in range(1,n+1): # 1~행갯수만큼 확인
+    col=[0]*(n*n) # 행별 열번호 저장용
+    col[1]=i # 1번 행에 i번 열을 지정한다
+    dfs(2) # 2번행 확인
+
+print("{}={}".format(n,ans))
+
+
+

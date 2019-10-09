@@ -1,0 +1,16 @@
+﻿단순하게 순열을 생성하는 방법
+
+재귀 호출을 통한 순열 생성
+// a[] : 데이터가 저장된 배열
+// swap(i, j): arr[i] <‐‐교환‐‐> arr[j]
+// k: 현재까지 교환된 원소의 개수
+def perm(a, k=0):
+   if k == len(a):
+      print (a)
+   else:
+      for i in range(k, len(a)):
+         a[k], a[i] = a[i] ,a[k]
+         perm(a, k+1)
+         a[k], a[i] = a[i], a[k]
+
+perm([1,2,3])
