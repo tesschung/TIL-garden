@@ -1,0 +1,80 @@
+body {
+  height: 5000px;
+}
+
+div {
+  color: white;
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+}
+
+.margin {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.border {
+  border-width: 5px;
+  border-style: dotted;
+  border-color: red;
+  border-top-color: blue;
+  border-radius: 10px;
+  /* border: 5px dotted red; */
+}
+
+.margin-shorthand-1 {
+  /* 상하좌우 */
+  margin: 10px;
+}
+
+.margin-shorthand-2 {
+  /* 상하 / 좌우 */
+  margin: 10px 20px;
+}
+
+.margin-shorthand-3 {
+  /* 상 / 좌우 / 하 */
+  margin: 10px 20px 30px;
+}
+
+.margin-shorthand-4 {
+  /* 상 / 우 / 하 / 좌 (시계방향) */
+  margin: 10px 20px 30px 40px;
+}
+
+/* 가운데 정렬 */
+.align-center {
+  /* 오른쪽, 왼쪽에 반반 나눠준다. */
+  margin: 0 auto;
+}
+
+/* 오른쪽 정렬 */
+.align-right {
+  /* 오른쪽의 남은 너비를 왼쪽으로 보낸다.(붙인다.) */
+  /* 왼쪽에 남은 너비를 붙인다. */
+  margin-left: auto;
+}
+
+/* box-sizing */
+.box-sizing {
+  margin: 20px;
+  padding: 20px;
+  border: 10px solid crimson;
+  width: 300px;
+}
+
+.content-box {
+  box-sizing: content-box;
+}
+
+.border-box {
+  box-sizing: border-box;
+}

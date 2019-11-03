@@ -1,9 +1,0 @@
-endpoints {  
-  // action과 그에 맞는 자바스크립트를 매핑
-  action-endpoints {
-    action-endpoint (GetRestautantInfo) {
-      accepted-inputs (near, point, self)
-      local-endpoint (GetRestautantInfo.js)
-    }
-  }
-}

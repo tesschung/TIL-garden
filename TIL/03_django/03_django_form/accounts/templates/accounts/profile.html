@@ -1,0 +1,46 @@
+{% extends 'articles/base.html' %}
+{% block content %}
+<h1 class="text-center">{{ person.username }}'s Profile</h1>
+<hr>
+<h3 class="text-center">{{ person.username }}이 작성한 글</h3>
+
+<div class="row">
+{% with articles=person.article_set.all %}
+  {% for article in articles %}
+  <div class="col-4 my-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{ article.content }}</h5>
+        <p class="card-text">{{ article.like_users.count }}명이 좋아하는 글</p>
+        <p class="card-text">{{ article.comment_set.count }}개의 댓글</p>
+        <a href="{% url 'articles:detail' article.pk %}" class="btn btn-primary">게시글 보기</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+{% endwith %}
+</div>
+
+<hr>
+
+<h3 class="text-center">{{ person.username }}이 작성한 댓글</h3>
+<div class="row">
+{% with comments=person.comment_set.all %}
+  {% for comment in comments %}
+  <div class="col-12 my-2">
+    <div class="card">
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p>{{ comment.content }}</p>
+          <footer class="blockquote-footer">{{ comment.created_at|date:"SHORT_DATE_FORMAT" }}</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+{% endwith %}
+</div>
+
+
+
+{% endblock %}

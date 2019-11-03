@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>FORM</h1>
+  <p>주문서를 작성하여 주십시오.</p>
+  <form action="#">
+    이름: <input type="text" placeholder="이름을 입력해주세요."><br>
+    날짜: <input type="date">
+    <h2>1. 샌드위치 선택</h2>
+    <input type="radio" name="sandwich" value="1" checked>에그 마요<br>
+    <input type="radio" name="sandwich" value="2">이탈리안 비엠티<br>
+    <input type="radio" name="sandwich" value="3">터키 베이컨 아보카도
+    <hr>
+    <h2>2. 사이즈 선택</h2>
+    <input type="number" max="30" min="15" step="15">
+    <hr>
+    <h2>3. 빵</h2>
+    <select name="bread">
+      <option value="1">허니오트</option>
+      <option value="2" disabled>플랙브레드</option>
+      <option value="3">하티 이탈리안</option>
+    </select>
+    <hr>
+    <h2>4. 야채/소스</h2>
+    <input type="checkbox" name="source" value="1">토마토<br>
+    <input type="checkbox" name="source" value="2">오이<br>
+    <input type="checkbox" name="source" value="3">할라피뇨<br>
+    <input type="checkbox" name="source" value="4">핫 칠리<br>
+    <input type="checkbox" name="source" value="5">바베큐<br>
+    <input type="submit" value="submit">
+  </form>
+</body>
+</html>

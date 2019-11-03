@@ -1,0 +1,21 @@
+<div class="card mb-3">
+  <div class="card-header">
+    작성자 : <a class="card-link" href="{% url 'accounts:profile' article.user %}">{{ article.user }}</a>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">글 제목 : {{ article.title }}</h5>
+    <p class="card-text">{{ article.pk }}</p>
+    <hr>
+    <p class="card-text">
+      <a href="{% url 'articles:like' article.pk %}">
+        {% if user in article.like_users.all %}
+          <i class="fas fa-heart fa-lg" style="color: crimson;"></i>
+        {% else %}
+          <i class="fas fa-heart fa-lg" style="color: black;"></i>
+        {% endif %}
+      </a>
+      {{ article.like_users.all|length }} 명이 이 글을 좋아합니다.
+    </p>
+    <a href="{{ article.get_absolute_url }}" class="btn btn-primary">DETAIL</a>
+  </div>
+</div>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="62d7351e-c87d-47ac-a6c0-f9a5976c7e58" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/표준코드 및 이론정리/BinaryTree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/표준코드 및 이론정리/트리, 그래프.md" beforeDir="false" afterPath="$PROJECT_DIR$/표준코드 및 이론정리/트리, 그래프.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Math/DiscreteMathematics/01_논리와 증명.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Math/DiscreteMathematics/01_논리와 증명.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/Bixby/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/assets/icon/bixby.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/assets/icon/new-google-favicon-512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/authorization.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/capsule.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/code/GetBookDetailByURL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/code/GetBooks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/code/Logout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Actions/GetBookDetailByURL.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Actions/GetBooks.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Actions/Logout.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Actions/OpenBrowser.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/Book.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/BookConcepts/BookAuthors.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/BookConcepts/BookAverageRating.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/BookConcepts/BookCategories.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/BookConcepts/BookDescription.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/BookConcepts/BookID.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/BookConcepts/BookImages.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/BookConcepts/BookKind.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/BookConcepts/BookLanguage.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/BookConcepts/BookPage.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/BookConcepts/BookPrintType.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/BookConcepts/BookPublishedDate.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/BookConcepts/BookPublisher.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/BookConcepts/BookRatingsCount.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/BookConcepts/BookTitle.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/BookConcepts/Price.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/BookConcepts/SalesAbility.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/BookConcepts/SalesCountry.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/BookConcepts/SalesEbook.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/BookConcepts/SalesLink.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/BookConcepts/SalesListPrice.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/BookConcepts/SalesRetailPrice.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/BookConcepts/URL.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/BookInfo.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/Books.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/Keyword.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/LogoutResult.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/models/Concepts/SalesInfo.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/resources/base/capsule.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/resources/base/endpoints.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/resources/ko-KR/books.hints.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/resources/ko-KR/capsule-info.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/resources/ko-KR/dialog/Macro.dialog.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/resources/ko-KR/layout/BookInfo_Macro.layout.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/resources/ko-KR/layout/BooksInfo_Macro.layout.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/resources/ko-KR/training/t-0.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/resources/ko-KR/training/t-1.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/resources/ko-KR/training/t-c.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/resources/ko-KR/training/t-f.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/resources/ko-KR/training/t-q.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/resources/ko-KR/view/GetBookDetailByURL_Result.view.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/resources/ko-KR/view/GetBooks_Result.view.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/resources/ko-KR/view/Logout_Result.view.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-books-KR-master/resources/ko-KR/view/OpenBrowser_Result.view.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/assets/icon3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/assets/images/Earthquake_Image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/assets/images/earthquake.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/assets/images/green-map-marker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/capsule.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/code/FindEarthquakes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/models/actions/FindEarthquakes.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/models/concepts/ApproxMagnitude.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/models/concepts/Earthquake.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/models/concepts/EarthquakeDateTime.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/models/concepts/EarthquakeLocation.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/models/concepts/Magnitude.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/models/concepts/MaxMagnitude.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/models/concepts/MinMagnitude.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/models/concepts/Title.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/base/earthquakes.endpoints.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/base/layouts/earthquake-details.layout.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/base/layouts/earthquake.layout.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/base/views/earthquake.view.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/capsule-info.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/dialogs/inProgress.dialog.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/dialogs/noresult.dialog.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/dialogs/result.dialog.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/filename.hints.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-0.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-1.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-3.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-4.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-5.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-6.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-8.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-a.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-b.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-c.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-d.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-f.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-g.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-h.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-i.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-j.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-k.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-l.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-m.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-p.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-q.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-r.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-s.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-t.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-u.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-v.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-w.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-x.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-earthquake-insights-master/resources/en/training/t-y.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/004.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/005.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/011.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/012.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/013.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/014.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/015.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/016.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/017.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/018.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/019.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/020.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/021.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/022.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/023.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/024.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/025.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/026.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/027.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/028.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/029.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/images/030.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/img/bixby_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/assets/img/red-marker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/capsule.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/code/GetRestautantInfo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/code/data/restaurants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/code/event.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/models/actions/GetRestautantInfo.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/models/actions/GetReversePoint.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/models/actions/OpenBrowser.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/models/concepts/Location.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/models/concepts/Near.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/models/concepts/Point.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/models/concepts/Restaurant.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/models/concepts/RestaurantName.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/models/concepts/URL.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/models/concepts/UserName.model.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/resources/base/endpoints.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/resources/ko-KR/capsule-info.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/resources/ko-KR/layout/macros/RestaurantInfo_Macro.layout.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/resources/ko-KR/layout/macros/RestaurantList_Macro.layout.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/resources/ko-KR/layout/macros/RestaurantMap_Macro.layout.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/resources/ko-KR/restaurant.hints.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/resources/ko-KR/training/t-1.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/resources/ko-KR/training/t-5.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/resources/ko-KR/training/t-f.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/resources/ko-KR/training/t-p.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/resources/ko-KR/training/t-s.training.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/resources/ko-KR/view/GetRestaurantInfo_Result.view.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/resources/ko-KR/view/OpenBrowser_Result.view.bxb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project/Bixby/capsule-sample-restaurants-KR-master/resources/ko-KR/vocab/Near.vocab.bxb" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/표준코드 및 이론정리/BinaryTree.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="190" />
+    <option name="y" value="23" />
+    <option name="width" value="1250" />
+    <option name="height" value="821" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="표준코드 및 이론정리" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62d7351e-c87d-47ac-a6c0-f9a5976c7e58" name="Default Changelist" comment="" />
+      <created>1570588311933</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570588311933</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="190" y="23" width="1250" height="821" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24979658" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32921812" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/표준코드 및 이론정리/BinaryTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3653">
+          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

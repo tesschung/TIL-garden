@@ -1,0 +1,32 @@
+body {
+  height: 5000px;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  color: white;
+  line-height: 100px;
+  text-align: center;
+}
+
+/* 오른쪽 정렬 */
+.ml-auto {
+  /* 왼쪽에 남은 너비를 붙인다. */
+  margin-left: auto;
+}
+
+/* 왼쪽 정렬 */
+.mr-auto {
+  margin-right: auto;
+}
+
+/* 가운데 정렬 */
+.mx-auto {
+  margin: 0 auto;
+}
+
+.red {
+  color: red;
+}

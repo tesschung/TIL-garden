@@ -1,4 +1,0 @@
-dialog (NoResult) {
-  match: Earthquake (earthquake)
-  template("I couldn't find any earthquakes")
-}

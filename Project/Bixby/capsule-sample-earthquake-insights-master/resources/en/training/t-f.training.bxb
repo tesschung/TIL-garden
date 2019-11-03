@@ -1,5 +1,0 @@
-train (t-f4gnjzowyrg95nf3rdnhbnsjz) {
-  utterance ("[g:FindEarthquakes] Show earthquakes of at least {[g:MinMagnitude] (7.0)[v:Magnitude]} magnitude (last year)[v:time.DateTimeExpression]")
-  plan (Y2BjUE2tSMwtyEnVS00sKskoLE3MTvXMK85Mzygp1nOFCzFo4VHmlpmXglBazGBIvNq6zLyC0pJiBnU8Wnwz83wT0/MyS0pTUhlU8CmEq5IuyyzTK8nMTdVzSSxJDQEyXCsKilKLizPz8xhYGRgZmBiYGViALAYomwlIgwALlGQEyjGDaWYA)
-  last-modified (1561061389656)
-}

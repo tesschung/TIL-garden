@@ -1,0 +1,39 @@
+/* 그룹 선택자 */
+p,
+h3 {
+  color: grey;
+}
+
+/* div 세팅 */
+div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+/* 인접 선택자, 바로 붙어있는 */
+.red+.blue+div {
+  background-color: purple;
+}
+
+/* 자식 선택자 */
+ol > li {
+  color: darkgreen;
+}
+
+ol#chocolate > li {
+  color: chocolate;
+}
+
+/* 자손(후손) 선택자 */
+ul li {
+  color: lime;
+}

@@ -1,5 +1,0 @@
-train (t-c2k38vpf60t611evq2krk5ob9) {
-  utterance ("[g:FindEarthquakes] List earthquakes that happened (last weekend)[v:time.DateTimeExpression]")
-  plan (Y2BhUE2tSMwtyEnVS00sKskoLE3MTvXMK85Mzygp1nOFCzFo4VHmlpmXglBazGBIvNq6zLyC0pJiBumyzDK9kszcVD2XxJLUECDDtaKgKLW4ODM/j4GZgZGBCUgygGlGBggAsYBiAA==)
-  last-modified (1561061374086)
-}

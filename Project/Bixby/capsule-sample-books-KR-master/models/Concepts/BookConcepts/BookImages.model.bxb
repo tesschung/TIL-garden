@@ -1,3 +1,0 @@
-text (BookImages) {
-  extends (URL)
-}

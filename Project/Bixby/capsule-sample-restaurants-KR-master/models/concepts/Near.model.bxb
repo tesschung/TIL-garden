@@ -1,4 +1,0 @@
-enum (Near){
-  symbol (Nearby) 
-  // Near.vocab.bxb 에 Nearby의 동의어들이 정리되어있고, Nearby는 그것들의 대표어
-}

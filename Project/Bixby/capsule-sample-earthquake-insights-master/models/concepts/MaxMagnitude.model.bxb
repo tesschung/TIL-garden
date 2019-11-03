@@ -1,4 +1,0 @@
-decimal (MaxMagnitude) {
-  description (Maximum magnitude of an earthquake)
-  role-of(Magnitude)
-}

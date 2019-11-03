@@ -1,3 +1,0 @@
-structure (SalesListPrice){
-  extends (Price)
-}

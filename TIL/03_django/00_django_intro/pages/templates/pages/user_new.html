@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block bcontent %}
+<form action="/pages/user_create/" method="POST">
+  {% csrf_token %}
+  <label for="name">아이디</label>
+  <input type="text" id="name" name="name"><br>
+  <label for="pwd">패스워드</label>
+  <input type="password" id="pwd" name="pwd">
+  <input type="submit" value="가입">
+</form>
+{% endblock %}
+

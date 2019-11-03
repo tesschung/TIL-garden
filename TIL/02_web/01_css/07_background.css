@@ -1,0 +1,38 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* 위는 기본 세팅(무시) */
+
+.bg-box {
+  height: 100%;
+
+  /* background-image */
+  background-image: url("images/sample_img.jpg");
+
+  /* background-size */
+  background-size: 700px 500px;
+  background-size: contain;
+  background-size: cover;
+
+  /* background-repeat */
+  background-repeat: no-repeat;
+  
+  /* background-position */
+  background-position: 0, 0;
+  background-position: center;
+
+  /* background-attachment */
+  background-attachment: fixed;
+}
+

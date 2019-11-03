@@ -1,5 +1,0 @@
-train (t-ic0de1gyhe2uhkivdctrkeypo) {
-  utterance ("[g:example.earthquakeInsights.FindEarthquakes] find earthquakes in (Los Angeles)[v:viv.geo.SearchTerm] that happened (last year)[v:viv.time.DateTimeExpression]")
-  plan (jYy7DoJAEEWv4KM3dtbGxGITf8EIia3yAxuZwER2wd2FUPntLhBRG+NU5565M1hgQ61UVUGCpHH5vZY3OmnLWe6siEaF3Y9azDp9Vy32/3cfrKvaWawabkRGpbj4m2t+poxLje3LHmou0s9VbEo15ISMwvL7vHfrzjlWJI7SUeIhaitD1naf55ggQIgpZp4xpsAT+jxM6KlvPAE=)
-  last-modified (1561147412216)
-}

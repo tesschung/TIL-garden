@@ -1,5 +1,0 @@
-train (t-rc1mviibd80mk0hijcrwgbfui) {
-  utterance ("[g:FindEarthquakes] Show earthquakes (near me)[r:geo.CurrentLocation]")
-  plan (jY5NCsIwEEY/W63VlaCgB9CNi4BXUFQEF1JPENrQBmtSm6S48uzGlvpTUFwMzLx58zHoY8au9JyljDCa6+Ri6InthOJxohVZPxHmP7QNF9FLVVj87964yIxWGBW8IDGT5GhvwiRgMZcC05ouDU+jg+RCBzTiRn1Yw9p6EzD5dopBvdkyWXKMa7Iyec6E3suQ6kdy86sqoIcWHLhoowMPXfiWoME8O6OkVbnl5NjeB+4=)
-  last-modified (1561061459418)
-}
