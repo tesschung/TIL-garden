@@ -1,0 +1,16 @@
+<div class="jumbotron text-center">
+  <h1 class="display-4">{{ person.username }}</h1>
+  {% with followings=person.followings.all followers=person.followers.all%}
+    <p class="lead">
+      팔로잉 : {{ followings|length }} / 팔로워 : {{ followers|length }}
+    </p>
+    <hr class="my-4">
+    {% if user != article.user %}
+      {% if user in followers %}
+        <a class="btn btn-primary btn-lg" href="{% url 'articles:follow' article.pk person.pk %}" role="button">Unfollow</a>
+      {% else %}
+        <a class="btn btn-primary btn-lg" href="{% url 'articles:follow' article.pk person.pk %}" role="button">Follow</a>
+      {% endif %}
+    {% endif %}
+  {% endwith %}
+</div>
