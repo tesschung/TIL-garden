@@ -580,9 +580,9 @@ console.log(sum) // (((( 1 + 2 ) + 3 ) + 4 ) + 5) 15
 
 ### DOM selector
 
-querySelector() 
+querySelector()  => 해당하는 하나 태그만 가져온다.
 
-querySelectorAll()
+querySelectorAll() => 배열로 가져온다.
 
 
 
@@ -709,7 +709,7 @@ console.log(test) // SyntaxError: Missing initializer in const declaration
 
 `===` 값뿐만 아니라 타입도 비교
 
-:star: `0 == []` 중요
+:star: 0 == [] 중요
 
 - array helper
 
@@ -1012,11 +1012,7 @@ console.log(filteredUsers[1].name)
 
   arrow일 때는 window/global(불리는 곳(button)의 bind를 풀어버리고 최상단(브라우저에서는 window, node에서는 global 객체)를 가리킨다.)
 
-- v-if
 
-  v-if 는 조건문을 만족할 경우에만 렌더링된다. 즉, `v-if` 는 false면 렌더링 자체가 되지 않는다.
-
-  디렉티브 v-show는 조건과 관계없이 항상 렌더링된다. `v-show`는 렌더링 되고 `display: none`으로 처리된다.
 
 
 
@@ -1035,18 +1031,4 @@ false
 ```
 
 :star: a() === typeof c => type 비교
-
-- `v-model`
-
-
-
-
-
-
-
-
-
-
-
-
 
