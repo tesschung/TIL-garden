@@ -18,22 +18,16 @@
 
 
 
+## Projects
 
+- Bixby: Artweek.Artweek (2019.10 ~ 운영중, 배포완료)
 
-완료
+https://github.com/makeartweek/bixby
 
-- Bixby: Artweek.Artweek
+- LifeRecorders: MovieRecorders (2019.11 ~ 배포예정)
 
+https://github.com/LifeRecorders/1126
 
+- RunPygame (2019.12 ~ 개발중, 배포예정)
 
-고려중
-
-- IoT - 11월13일까지
-
- https://www.thinkcontest.com/Contest/ContestDetail.html?id=13926
-
-- 오픈뱅킹 - 11월13일까지
-
-https://www.thinkcontest.com/Contest/ContestDetail.html?id=13643
-
-http://shinhan-hackathon.com/
+https://github.com/RunPygame/RunPygame

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e7bbfacc-4c66-4dd7-b2bd-aba753baadf7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/django_intro/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pygame_01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/django_intro/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/django_intro/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/django_intro/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/django_intro/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/static/pages/images/sample_img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/static/pages/stylesheets/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/templates/pages/area.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/templates/pages/art.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/templates/pages/catch.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/templates/pages/dinner.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/templates/pages/hello.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/templates/pages/image.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/templates/pages/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/templates/pages/introduce.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/templates/pages/isitgwangbok.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/templates/pages/result.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/templates/pages/static_example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/templates/pages/template_language.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/templates/pages/throw.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/templates/pages/times.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/templates/pages/user_create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/templates/pages/user_new.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/pages/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/utilities/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/utilities/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/utilities/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/utilities/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/utilities/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/utilities/templates/utilities/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/utilities/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/utilities/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/00_django_intro/utilities/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/01_django_orm_crud/articles/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/01_django_orm_crud/articles/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/01_django_orm_crud/articles/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/01_django_orm_crud/articles/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/01_django_orm_crud/articles/migrations/0002_article_updated_at.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/01_django_orm_crud/articles/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/01_django_orm_crud/articles/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/01_django_orm_crud/articles/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/01_django_orm_crud/articles/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/01_django_orm_crud/crud/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/01_django_orm_crud/crud/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/01_django_orm_crud/crud/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/01_django_orm_crud/crud/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/01_django_orm_crud/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/01_django_orm_crud/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/articles/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/articles/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/articles/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/articles/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/articles/migrations/0002_comment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/articles/migrations/0003_article_image.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/articles/migrations/0004_auto_20190920_1140.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/articles/migrations/0005_auto_20190920_1148.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/articles/migrations/0006_auto_20190920_1335.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/articles/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/articles/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/articles/static/articles/favicon/wolf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/articles/static/articles/images/no_img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/articles/static/articles/images/wolf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/articles/templates/articles/create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/articles/templates/articles/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/articles/templates/articles/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/articles/templates/articles/update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/articles/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/articles/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/articles/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/crud/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/crud/assets/images/wolf_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/crud/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/crud/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/crud/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/crud/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/jobs/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/jobs/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/jobs/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/jobs/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/jobs/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/jobs/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/jobs/templates/jobs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/jobs/templates/jobs/past_life.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/jobs/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/jobs/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/jobs/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02_django_crud/sample_img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/accounts/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/accounts/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/accounts/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/accounts/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/accounts/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/accounts/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/accounts/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/accounts/templates/accounts/auth_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/accounts/templates/accounts/change_password.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/accounts/templates/accounts/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/accounts/templates/accounts/profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/accounts/templates/accounts/signup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/accounts/templates/accounts/update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/accounts/templatetags/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/accounts/templatetags/gravatar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/accounts/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/accounts/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/accounts/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/articles/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/articles/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/articles/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/articles/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/articles/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/articles/migrations/0002_auto_20191024_0910.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/articles/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/articles/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/articles/templates/articles/_article.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/articles/templates/articles/_follow.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/articles/templates/articles/_nav.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/articles/templates/articles/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/articles/templates/articles/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/articles/templates/articles/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/articles/templates/articles/hashtag.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/articles/templates/articles/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/articles/templatetags/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/articles/templatetags/make_link.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/articles/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/articles/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/articles/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/myform/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/myform/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/myform/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/myform/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/03_django_form/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/04_model_relation/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/04_model_relation/manytomany/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/04_model_relation/manytomany/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/04_model_relation/manytomany/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/04_model_relation/manytomany/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/04_model_relation/manytomany/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/04_model_relation/manytomany/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/04_model_relation/manytomany/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/04_model_relation/manytomany/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/04_model_relation/modelrelation/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/04_model_relation/modelrelation/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/04_model_relation/modelrelation/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/04_model_relation/modelrelation/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/05_django_rest/api/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/05_django_rest/api/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/05_django_rest/api/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/05_django_rest/api/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/05_django_rest/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/05_django_rest/musics/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/05_django_rest/musics/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/05_django_rest/musics/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/05_django_rest/musics/fixtures/musics/dummy.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/05_django_rest/musics/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/05_django_rest/musics/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/05_django_rest/musics/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/05_django_rest/musics/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/05_django_rest/musics/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/05_django_rest/musics/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/05_django_rest/musics/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/05_django_rest/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/articles/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/articles/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/articles/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/articles/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/articles/migrations/0002_comment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/articles/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/articles/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/articles/templates/articles/create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/articles/templates/articles/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/articles/templates/articles/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/articles/templates/articles/update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/articles/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/articles/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/articles/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/crud/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/crud/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/crud/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/crud/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/crud/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/jobs/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/jobs/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/jobs/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/jobs/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/jobs/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/jobs/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/jobs/templates/jobs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/jobs/templates/jobs/past_life.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/jobs/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/jobs/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/jobs/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/CRUD_TEMP/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/practice/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/practice/pages/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/practice/pages/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/practice/pages/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/practice/pages/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/practice/pages/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/practice/pages/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/practice/pages/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/practice/pages/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/practice/practice/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/practice/practice/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/practice/practice/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/practice/practice/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/practice/practice/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/practice/utilities/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/practice/utilities/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/practice/utilities/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/practice/utilities/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/practice/utilities/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/practice/utilities/templates/utilities/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/practice/utilities/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/practice/utilities/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/practice/utilities/views.py" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>screen</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pygame_01.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/Pygame.iml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="197" />
+    <option name="y" value="23" />
+    <option name="width" value="1106" />
+    <option name="height" value="832" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e7bbfacc-4c66-4dd7-b2bd-aba753baadf7" name="Default Changelist" comment="" />
+      <created>1575528764250</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575528764250</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="197" y="23" width="1106" height="832" extended-state="0" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08110599" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32972974" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pygame_01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+          <folding>
+            <element signature="e#135#179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
