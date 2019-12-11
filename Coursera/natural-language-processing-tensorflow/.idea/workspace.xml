@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d00e595e-5044-4535-a26a-9150f1726f83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/001_ExerciseBBC.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_UsingAPIs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_Texttosequence.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03_LookingmoreattheTokenizer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_Padding.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05_Sarcasm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SentimentInText.md" beforeDir="false" afterPath="$PROJECT_DIR$/SentimentInText.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Pygame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Pygame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Thoughts/20191128.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Thoughts/20191129.md" beforeDir="false" />
@@ -32,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/001_ExerciseBBC.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+            <state relative-caret-position="266">
+              <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
               <folding>
                 <element signature="e#147#157#0" expanded="true" />
               </folding>
@@ -77,8 +73,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="481" />
-    <option name="y" value="23" />
+    <option name="x" value="510" />
+    <option name="y" value="40" />
     <option name="width" value="832" />
     <option name="height" value="832" />
   </component>
@@ -108,6 +104,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
@@ -170,8 +167,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="481" y="23" width="832" height="832" extended-state="0" />
-    <editor active="true" />
+    <frame x="510" y="40" width="832" height="832" extended-state="0" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10357583" />
@@ -242,8 +238,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/001_ExerciseBBC.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+        <state relative-caret-position="266">
+          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
           <folding>
             <element signature="e#147#157#0" expanded="true" />
           </folding>

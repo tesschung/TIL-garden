@@ -419,3 +419,11 @@ export default function() {
 
 
 
+
+
+## :key: Keys
+
+- Tokenizing(encoding) - Sequence - padding
+
+
+
