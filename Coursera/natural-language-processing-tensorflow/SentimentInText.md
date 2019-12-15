@@ -374,7 +374,7 @@ sequences = tokenizer**.texts_to_sequences**(sentences)
 
 **When initializing the tokenizer, how to you specify a token to use for unknown words?**
 
-oov_token=<Token>
+oov_token= < Token >
 
 
 
@@ -400,7 +400,7 @@ they will get padded to the length of the longest sequences by adding zeros to t
 
 ## Exercise 1 - Explore the BBC news archive
 
--  [BBC text archive](http://mlg.ucd.ie/datasets/bbc.html) 에서 tokenize the dataset, removing common stopewords
+-  [BBC text archive](http://mlg.ucd.ie/datasets/bbc.html) 에서 tokenize the dataset, removing common stopwords
 
 ```python
 # !wget --no-check-certificate \
@@ -448,10 +448,10 @@ with open("bbc-text.csv", 'r') as csvfile:
         labels.append(row[0])
         sentence = row[1]
         for word in stopwords:
-            token = " " + word + " "
-            sentence = sentence.replace(token, " ")
-            sentence = sentence.replace("  ", " ")
-        sentences.append(sentence)
+            token = " " + word + " " # word 양 옆에 공백 추가
+            sentence = sentence.replace(token, " ") # 해당하는 것 공백으로 replace
+            sentence = sentence.replace("  ", " ") # 공백 두 개를 하나로 replace
+        sentences.append(sentence) # 정제된 문장 리스트에 추가
 print(len(sentences))
 print(sentences[0])
 

@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d00e595e-5044-4535-a26a-9150f1726f83" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/02_.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/001_ExerciseBBC.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/00_UsingAPIs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_Texttosequence.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/03_LookingmoreattheTokenizer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/04_Padding.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05_Sarcasm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sarcasm-Dataset.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/SentimentInText.md" beforeDir="false" afterPath="$PROJECT_DIR$/SentimentInText.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bbc-text.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WordEmbeddings.md" beforeDir="false" afterPath="$PROJECT_DIR$/WordEmbeddings.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Math/DiscreteMathematics/01_논리와 증명.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Math/DiscreteMathematics/02_수와 표현.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Math/DiscreteMathematics/03_집합과 조합론.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Math/DiscreteMathematics/명제.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Papers/Linguistics/SentimentAnalysisAndOpinionMining.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Pygame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Pygame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Thoughts/20191128.md" beforeDir="false" />
@@ -25,7 +22,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01_Lookingintothedetails.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="1" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/02_.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -48,13 +64,15 @@
         <option value="$PROJECT_DIR$/01_Texttosequence.py" />
         <option value="$PROJECT_DIR$/002_ExerciseBBC.py" />
         <option value="$PROJECT_DIR$/001_ExerciseBBC.py" />
+        <option value="$PROJECT_DIR$/01_Lookingintothedetails.py" />
+        <option value="$PROJECT_DIR$/02_.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="307" />
-    <option name="y" value="40" />
-    <option name="width" value="1035" />
+    <option name="x" value="642" />
+    <option name="y" value="23" />
+    <option name="width" value="798" />
     <option name="height" value="832" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -63,7 +81,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -80,6 +97,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -146,15 +164,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="307" y="40" width="1035" height="832" extended-state="0" />
+    <frame x="642" y="23" width="798" height="832" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49823943" visible="true" weight="0.24358974" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49823943" visible="true" weight="0.106821105" />
       <window_info id="Structure" order="1" sideWeight="0.50176054" side_tool="true" weight="0.24358974" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.23243243" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32972974" />
@@ -162,79 +177,23 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.23243243" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/01_Texttosequence.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/00_UsingAPIs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/03_LookingmoreattheTokenizer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/04_Padding.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/05_Sarcasm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-48">
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/002_ExerciseBBC.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="23" selection-start-line="23" selection-end-line="39" selection-end-column="19" />
-          <folding>
-            <element signature="e#171#181#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/001_ExerciseBBC.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-          <folding>
-            <element signature="e#147#157#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/01_Texttosequence.py" />
+    <entry file="file://$PROJECT_DIR$/00_UsingAPIs.py" />
+    <entry file="file://$PROJECT_DIR$/03_LookingmoreattheTokenizer.py" />
+    <entry file="file://$PROJECT_DIR$/04_Padding.py" />
+    <entry file="file://$PROJECT_DIR$/05_Sarcasm.py" />
+    <entry file="file://$PROJECT_DIR$/002_ExerciseBBC.py" />
+    <entry file="file://$PROJECT_DIR$/001_ExerciseBBC.py" />
     <entry file="file://$PROJECT_DIR$/SentimentInText.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -248,6 +207,28 @@
             </folding>
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WordEmbeddings.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01_Lookingintothedetails.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02_.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
         </state>
       </provider>
     </entry>
