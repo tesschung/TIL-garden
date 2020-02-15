@@ -40,7 +40,7 @@
 
 https://github.com/makeartweek/bixby
 
-- LifeRecorders: MovieRecorders (2019.11 ~ )
+- LifeRecorders: MovieRecorders (2019.11 ~ 배포완료)
 
 https://github.com/LifeRecorders/1126
 
