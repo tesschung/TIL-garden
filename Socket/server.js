@@ -1,26 +1,23 @@
-var net = require('net')
+var express = require("express");
+var http = require("http");
+var app = express();
 
-var server = net.createServer(function(socket){
-  console.log('ConnectEvent', socket.remoteAddress)
-  socket.write('Hello I am server.js')
+var server = http.createServer(app);
+server.listen(5500);
 
-  socket.on('data', function (chunk) {
-    // 데이터 도착
-    console.log('클리이언트가 보냄',
-    chunk.toString())
+app.get("/", function(req, res) {
+  res.sendFile("./client.html");
+});
+
+var io = require("socket.io")(server);
+
+io.on("connect", function(socket) {
+  console.log("클라이언트 접속");
+
+  socket.on("disconnect", function() {
+    console.log("클라이언트 접속 종료");
   });
-  socket.on('end', function () {
-    // 원격 호스트의 종료
-  })
+  setInterval(function() {
+    socket.emit("message", "메세지");
+  }, 3000);
 });
-
-server.on('listening', function(){
-  console.log('Server is listening @', server.address()) // console에는 접속가능한 server.address()의 주소가 찍힌다.
-});
-
-server.on('close', function(){
-  console.log('ServerClose')
-});
-
-server.listen(3000);
-

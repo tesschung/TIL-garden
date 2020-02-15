@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <meta charset="UTF8">
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+        socket.on('connect', function () {
+            console.log('서버와 연결')
+        })
+    </script>
+</head>
+
+<body>
+    <h1>socket.io sample</h1>
+    <ul>
+        <li>
+            <script>
+                socket.on('messagee', function (msg) {
+                    document.writeln('<li>')
+                    document.writeln(msg)
+                    document.writeln('</i>')
+
+
+                })
+            </script>
+        </li>
+    </ul>
+
+</body>
+
+</html>

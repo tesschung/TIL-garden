@@ -314,3 +314,134 @@ socket.connect({host:ip, port:port}, function () {
 ![image-20200214233645163](README.assets/image-20200214233645163.png)
 
 -> 신기하다.. 채팅 만들러가야징
+
+
+
+
+
+### 실시간 웹서비스 원리
+
+다양한 웹 브라우저가 있어서 실시간 웹서비스를 하는게 좀 어려웠음
+
+크롬, 익스 등 다르니까.
+
+```cmd
+npm install socket.io
+```
+
+
+
+**서버**
+
+- http 서버
+- **Socket.io 서버**
+
+**클라이언트(웹 브라우저)**
+
+- http 클라이언트
+- **Socket.io 클라이언트**
+
+
+
+**서비스 시작**
+
+http 서버 준비
+
+Socket.io 서버 준비
+
+socket.io **클라이언트** 요청 -> html로 응답
+
+socket.io 클라이언트 초기화 및 서버 접속
+
+
+
+두 서버 준비
+
+웹 서버 -> http, express
+
+Socket.io 서버
+
+
+
+
+
+
+
+socket.io 클라이언트 이벤트
+
+connect
+
+error
+
+disconnect
+
+Reconnect reconnecting reconnect_error...
+
+서버와 연결 끊어지면 자동 재접속 시도
+
+
+
+**메세지 전송**
+
+이벤트 발생 Socket.emit()
+
+Socket.emit('event', **data**)
+
+-> 이벤트를 발생시킨다.
+
+
+
+**메세지 수신**
+
+이벤트 리스너 등록 Socket.on()
+
+socket.on('event', function(**data**){}) -> 'event'에 반응하도록한다
+
+-> 이벤트를 받는다.
+
+
+
+![image-20200215191907372](README.assets/image-20200215191907372.png)
+
+-> 서버와 클라이언트를 나누지 않은이유는
+
+둘 다 가능하기 때문
+
+서버에서도 보낼 수 있고, 클라이언트에서도 보낼 수 있다.
+
+
+
+**이벤트로 메세지 주고받기**
+
+- 서버에 이벤트 등록 - 클라이언트에서 이벤트 발생
+- 클라이언트 이벤트 등록  - 서버에서 이벤트 발생
+
+
+
+**서버에서의 이벤트 발생** **두 가지**
+
+소켓 하나에 이벤트 발생 1:1
+
+Socket.emit('Direct Event', [data])
+
+연결된 모든 소켓에 이벤트 발생 1:N
+
+socket.io.emit('broadcast Event', [data]) // io.emit으로도 가능
+
+
+
+네임스페이스
+
+- 같은 네임스페이스에서만 메세지 주고 받음
+- /name-space 이런식으로 정의해서 등록
+
+io.of 이런식으로
+
+
+
+룸
+
+- 네임스페이스 내 채널
+- 같은 룸에서만 데이터 교환
+- 룸에 입장, 여러 움에 입장가능
+- 룸에서 떠나기
