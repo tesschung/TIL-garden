@@ -4,6 +4,8 @@
 
 매일 매일 잔디 심는 정원사들의 모임 "The Gardeners"에서 활동하는 정원사 정승원입니다!
 
+2019년 7월부터 (4기, 5기 ...) 현재까지 참여중
+
 
 #### [Algorithms 문제풀이](https://github.com/seoul-ssafy-class-2-studyclub/Algorithms-Tess)
 
@@ -44,8 +46,4 @@ https://github.com/makeartweek/bixby
 
 https://github.com/LifeRecorders/1126
 
-- RunPygame (2019.12 ~ )
-
-https://github.com/RunPygame/RunPygame
-
-- RoomSTAR 노래방 웹 애플리케이션 (2020.01 ~ 개발중 )
+- RoomSTAR 노래방 웹 애플리케이션 (2020.01 ~ 개발완료 )
