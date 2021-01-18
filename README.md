@@ -2,9 +2,9 @@
 
 이곳은 오늘에 만족할 수 있도록, 오늘에 충실했던 이야기들을 글로 적는 공간입니다.
 
-매일 매일 잔디 심는 정원사들의 모임 "The Gardeners"에서 활동하는 정원사 정승원입니다!
+매일 매일 잔디 심는 정원사들의 모임 "The Gardeners"에서 활동하는 정원사입니다!
 
-2019년 7월부터 (4기, 5기 ...) 현재까지 참여중
+2019년 7월부터 (4기, 5기, 6기 ...) 참여중
 
 
 #### [Algorithms 문제풀이](https://github.com/seoul-ssafy-class-2-studyclub/Algorithms-Tess)
