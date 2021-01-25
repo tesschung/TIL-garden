@@ -26,25 +26,39 @@ ORDER BY를 사용하지 않아도 인덱스의 컬럼 순서로 정렬되어 �
 
 
 
+![img](images/cfile24.uf.215C343355EE83EB19A80E.png)
+
+
+
+
+
 **/\*+ ALL_ROWS \*/**
 목적 : Best Throughput
 용 도 : 전체 RESOURCE 소비를 최소화 시키기 위한 힌트. Cost-Based 접근방식으로 ALL_ROWS는 Full Table Scan을 선호하며 CBO(Cost Based Optimization)는 default로 ALL_ROWS를 선택한다.
 
- 
+예 :
+SELECT **/*+ALL_ROWS */**
+EMPNO,ENAME
+FROM EMP
+WHERE EMPNO = 7655;
+
+
 
 **/\*+ FIRST_ROWS \*/**
 목적 : Best Response Time
 용도 : 조건에 맞는 첫번째 row를 리턴하기 위한 Resource 소비를 최소화 시키기위한 힌트이며 Cost-Based 접근방식을 사용.
-특징 - Index Scan 이 가능하다면 Optimizer가 Full Table Scan 대신 Index Scan을 선택한다.
-    \- Index Scan 이 가능하다면 Optimizer가 Sort-Merge 보다 Nested Loop 을 선택한다.
-    \- Order By절에의해 Index Scan이 가능하면, Sort과정을 피하기위해 Index Scan을 선택한다.
-    \- Delete/Update Block 에서는 무시된다.
-    \- 다음을 포함한 Select 문에서도 제외된다.
-      집합연산자 (UNION, INTERSECT, MINUS, UNION ALL)
-      Group By
-      For UpDate
-      Group 함수
-      Distinct
+특징 
+
+​    \- Index Scan 이 가능하다면 Optimizer가 Full Table Scan 대신 Index Scan을 선택한다.
+​    \- Index Scan 이 가능하다면 Optimizer가 Sort-Merge 보다 Nested Loop 을 선택한다.
+​    \- Order By절에의해 Index Scan이 가능하면, Sort과정을 피하기위해 Index Scan을 선택한다.
+​    \- Delete/Update Block 에서는 무시된다.
+​    \- 다음을 포함한 Select 문에서도 제외된다.
+​      집합연산자 (UNION, INTERSECT, MINUS, UNION ALL)
+​      Group By
+​      For UpDate
+​      Group 함수
+​      Distinct
 
 ​    \- Full Table Scan보다는 index scan을 선호하며 Interactive Application인 경우 best response time을 제공 한다
 ​    \- sort merge join보다는 nested loop join을 선호한다.
@@ -78,7 +92,7 @@ ORDER BY를 사용하지 않아도 인덱스의 컬럼 순서로 정렬되어 �
 
 **/\*+ CLUSTER(table_name) \*/**
 : Cluster Scan을 선택하도록 지정. 따라서 Clustered Object만 적용
- 
+
 
 **/\*+ HASH_AJ \*/**
 : NOT IN SubQuery 를 HASH Anti-join으로 변형
@@ -93,7 +107,7 @@ ORDER BY를 사용하지 않아도 인덱스의 컬럼 순서로 정렬되어 �
 : 지정된 index를 강제적으로 쓰게끔 지정
  \- in list predicat에 대해서도 가능.
  \- Multi-column inlists 는 index 를 사용할 수 없다.
- 
+
 
 **/\*+ INDEX_COMBINE(table_name index_name) \*/**
 : Index명이 주어지지 않으면 Optimizer는 해당 테이블의 Best Cost 로 선택된 Boolean Combination Index 를 사용하며 Index 명이 주어지면 주어진 특정 Bitmap Index 의 Boolean Combination 의 사용
@@ -204,7 +218,7 @@ ORDER BY를 사용하지 않아도 인덱스의 컬럼 순서로 정렬되어 �
   (3) table이 striping되어 있는 경우, 그 table이 걸쳐있는 disk의 갯수
   (4) data의 위치 (즉, memory에 cache되어 있는지, disk에 있는지)
   (5) query의 형태 (예를 들어 sorts 혹은 full table scan)
- 
+
   SQL>SELECT /*+ PARALLEL(emp, 4) */ * FROM emp;
 
  
