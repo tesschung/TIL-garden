@@ -1,4 +1,4 @@
-
+https://docs.microsoft.com/ko-kr/sql/t-sql/queries/hints-transact-sql-table?view=sql-server-ver15
 
 힌트를 사용하여 사용자가 선택하는 execution plan을 사용하도록 
 
