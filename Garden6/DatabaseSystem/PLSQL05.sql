@@ -1,0 +1,173 @@
+--REM  5_CURSOR_forupdate.SQL 
+SET  TIMING  ON 
+SELECT  TO_CHAR(SYSDATE,'HH24:MI:SS') AS START_TIME FROM DUAL; 
+ 
+DECLARE 
+ CURSOR  CUR_EMP(P_DEPTNO IN NUMBER) IS 
+   SELECT EMPNO,ENAME,JOB,SAL,COMM FROM EMP  
+  WHERE  DEPTNO = P_DEPTNO  
+           FOR  UPDATE; 
+--   FOR  UPDATE  WAIT  10;         
+--   FOR   UPDATE  NOWAIT; 
+--               FOR  UPDATE  OF EMP.JOB         
+ V_DEPTNO DEPT.DEPTNO%TYPE; 
+BEGIN 
+ V_DEPTNO  :=  20; 
+ 
+    FOR  R_CUR_EMP IN CUR_EMP(V_DEPTNO) 
+    LOOP 
+    UPDATE EMP 
+    SET    COMM =  ROUND(R_CUR_EMP.SAL * 0.05,0) -- 급여의 5프로를 COMM으로 줄 것
+    WHERE  EMPNO = R_CUR_EMP.EMPNO; -- 이게 속도가 더 빠르다.
+         -- WHERE  CURRENT OF CUR_EMP; -- 위의 WHERE과 같은 역할, 커서가 현재 갖고온 레코드의 현재
+ 
+    INSERT INTO BONUS(ENAME,JOB,SAL,COMM)
+               VALUES(R_CUR_EMP.ENAME,R_CUR_EMP.JOB,R_CUR_EMP.SAL, 
+    ROUND(R_CUR_EMP.SAL * 0.05,0)); 
+ 
+--    DBMS_LOCK.SLEEP(5); -- 권한이 없어서 지금은 못씀
+    END LOOP; 
+        COMMIT; 
+END; 
+/ 
+ 
+SELECT  TO_CHAR(SYSDATE,'HH24:MI:SS') AS END_TIME FROM DUAL; 
+
+
+select * from emp;
+select * from emp
+where empno = &v_empno; -- 변수로 계속 실행 할 수 있다. -> 일회성
+select * from emp
+where empno = &&v_empno; -- 변수로 계속 실행 할 수 있다. -> 세션 저장
+select * from emp
+where empno = &v_empno; -- 변수로 계속 실행 할 수 있다. -> 일회성
+define;
+undefine v_empno;
+
+desc emp;
+desc dept;
+
+
+CREATE TABLE EXCEPTION_LOG
+(   LOG_DATE VARCHAR2(8) DEFAULT TO_CHAR(SYSDATE, 'YYYYMMDD'),
+    LOG_TIME VARCHAR2(8) DEFAULT TO_CHAR(SYSDATE, 'HH24MISS'),
+    PROGRAM_NAME VARCHAR2(200),
+    ERROR_MESSAGE VARCHAR2(250),
+    DESCRIPTION VARCHAR2(250)
+);
+
+
+CREATE OR REPLACE PROCEDURE
+    WRITE_LOG(A_PROGRAM_NAME IN VARCHAR2, A_ERROR_MESSAGE IN VARCHAR2, A_DESCRIPTIONIN VARCHAR2)
+AS
+BEGIN
+    -- EXCEPTION을 LOG테이블에 기록
+    INSERT INTO EXCEPTION_LOG(PROGRAM_NAME, ERROR_MESSAGE, DESCRIPTION)
+                    VALUES(A_PROGRAM_NAME, A_ERROR_MESSAGE, A_DESCRIPTION);
+EXCEPTION
+    WHEN OTHERS THEN
+                NULL;
+END;
+/
+
+
+CREATE OR REPLACE PROCEDURE CHANGE_SALARY(A_EMPNO IN NUMBER, A_SALARY NUMBER DEFAULT 2000)
+AS
+    V_ERROR_MESSAGE EXCEPTION_LOG.ERROR_MESSAGE%TYPE;
+BEGIN
+    UPDATE EMP SET SAL = A_SALARY WHERE EMPNO = A_EMPNO;
+    COMMIT;
+EXCEPTION
+    WHEN OTHERS THEN
+        ROLLBACK;
+        WRITE_LOG('CHANGE_SALARY', SQLERRM, 'VALUES : [1]' || A_EMPNO || ' [2] ' || A_SALARY);
+END CHANGE_SALARY;
+/
+
+EXECUTE CHANGE_SALARY(A_EMPNO => 7369, A_SALARY => 987654321);
+SELECT EMPNO.SAL FROM EMP WHERE EMPNO = 7369;
+
+
+CREATE OR REPLACE PROCEDURE CHANGE_SALARY(A_EMPNO IN NUMBER, A_SALARY NUMBER DEFAULT 2000)
+AS
+BEGIN
+        UPDATE EMP
+        SET SAL     = A_SALARY
+        WHERE EMPNO = A_EMPNO;
+        
+        COMMIT;
+END CHANGE_SALARY;
+/
+
+DESC CHANGE_SALARY
+
+VARIABLE P_EMPNO  NUMBER
+VARIABLE P_SALARY NUMBER
+
+BEGIN
+    :P_EMPNO  := 7369;
+    :P_SALARY := 7369;
+    
+    CHANGE_SALARY (:P_EMPNO, :P_SALARY);
+END;
+/
+
+SELECT EMPNO, SAL FROM EMP WHERE EMPNO = 7369;
+
+EXECUTE CHANGE_SALARY (:P_EMPNO);
+SELECT EMPNO, SAL FROM EMP WHERE EMPNO = 7369;
+commit;
+desc dbms_output;
+
+
+
+set serveroutput on;
+
+
+
+
+
+
+
+create or replace package p_employee
+as
+    procedure delete_emp(p_empno emp.empno%type);
+    
+    procedure insert_emp(p_emp number, p_ename varchar2, p_job varchar2, p_sal number, p_deptno number);
+    
+    fuction search_mng(p_empno emp.empno%type) return varchar2;
+    
+    gy_rows number(6);
+end p_employee;
+/
+
+
+CREATE OR REPLACE TRIGGER TRG_EMP CHANGE
+BEFORE INSERT OR DELETE OR UPDATE OF SAL ON EMP
+FOR EACH ROW
+DECLARE
+
+BEGIN
+    IF INSERTING AND :NEW.JOB IN ('CLERK', 'SALESMAN') THEN
+        INSERT INTO LABOR_UNION(EMPNO, ENAME, JOB, ENROLL_DATE) VALUES(:NEW.EMPNO, :NEW.ENAME, :NEW.JOB, SYSDATE)
+    ELSIF DELETING THEN
+        BEGIN 
+            INSERT INTO REFIRED_EMP(EMPNO, ENAME, JOB, RETIRED_DATE)
+                VALUES(:OLD.EMPNO, :OLD.ENAME, :OLD.JOB, SYSDATE);
+                
+            DELETE FROM LABOR_UNION WHERE EMPNO = :OLD.EMPNO;
+        EXCEPTION
+            WHEN OTHERS THEN
+                NULL;
+        END;
+    ELSIF UPDATING THEN
+        IF :NEW.SAL < 0 THEN
+            :NEW.SAL := :OLD.SAL;
+        END IF;
+    END IF;
+END;
+/
+
+
+SELECT ENAME, SAL, ROWID FROM EMP;
+

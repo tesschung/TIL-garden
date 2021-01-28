@@ -1,0 +1,188 @@
+BEGIN
+    INSERT INTO DEPT VALUES(11, 'OUTER_BLK_PART', 'Main_Blk'); -- 입력
+     DBMS_OUTPUT.PUT_LINE('[실행1]');
+    <<Nested_BLOCK_1>>
+    BEGIN
+        INSERT INTO DEPT VALUES(12, 'LOCAL_PART_1', 'Nested_Blk1'); -- 입력
+         DBMS_OUTPUT.PUT_LINE('[실행2]');
+        INSERT INTO DEPT VALUES(777, 'LOCAL_PART_1', 'Nested_Blk1');
+        INSERT INTO DEPT VALUES(13, 'LOCAL_PART_1', 'Nested_Blk1');
+        INSERT INTO DEPT VALUES(78, 'LOCAL_PART_1', 'Nested_Blk1');
+        COMMIT; -- 커밋 중요
+    EXCEPTION
+--        WHEN NO_DATA_FOUND THEN --  SELECT한 데이터가 없을때 발생
+--            NULL; -- 예외에 맞는 예외처리를 해주지 않아서 예외가 발생한 구간 전을 모두 ROLLBACK 
+        WHEN OTHERS THEN
+            NULL;
+    END Nested_BLOCK_1;
+    <<Nested_BLOCK_2>>
+    BEGIN 
+        INSERT INTO DEPT VALUES(55, 'LOCAL_PART_2', 'Nested_Blk2'); -- 입력
+--        COMMIT; 
+    END Nested_BLOCK_2;
+    
+    INSERT INTO DEPT VALUES(100, 'OUTER_BLK_PART', 'Main_Blk');   -- 입력
+    DBMS_OUTPUT.PUT_LINE('[실행1]');
+END;
+/
+
+-- INSERT는 DML이므로 AUTO COMMIT이 된다.
+
+SELECT * FROM DEPT;
+
+DELETE FROM DEPT WHERE DEPTNO NOT IN (10,20,30,40);
+DELETE FROM DEPT WHERE LOC = 'Main_Blk';
+
+
+REM DEFAULT SIZE 2000 BYTES.
+
+SET SERVEROUTPUT ON
+BEGIN
+    FOR I IN 1..10
+    LOOP
+        DBMS_OUTPUT.PUT_LINE('['||TO_CHAR(I)||']');
+    END LOOP;
+END;
+/
+
+SET SERVEROUTPUT OFF
+
+
+SELECT DEPTNO, ENAME, JOB, SAL, (SELECT ROUND(AVG(SAL),1) FROM EMP SE WHERE SE.JOB = M.JOB) AS JOB_AVG_SAL
+FROM EMP M
+ORDER BY DEPTNO, JOB, JOB_AVG_SAL ASC;
+
+
+
+
+DECLARE
+    TYPE T_ADDRESS IS RECORD(
+        ADDR1 VARCHAR2(60),
+        ADDR2 VARCHAR2(60),
+        ZIP VARCHAR2(7),
+        PHONE VARCHAR2(14)
+    );
+    
+    TYPE T_EMP_RECORD IS RECORD(
+        EMPNO NUMBER(4),
+        ENAME VARCHAR2(10),
+        JOB VARCHAR2(9),
+        ADDRESS T_ADDRESS,
+        HIREDATE DATE
+    );
+    
+REC_EMP T_EMP_RECORD;
+BEGIN
+
+    REC_EMP.EMPNO := '1234';
+    REC_EMP.ENAME := 'XMAN';
+    REC_EMP.JOB := 'DBA';
+    REC_EMP.ADDRESS.ADDR1 := '강남구 역삼동';
+    REC_EMP.ADDRESS.ZIP := '150-036';
+    REC_EMP.HIREDATE := SYSDATE - 336;
+    
+    DBMS_OUTPUT.PUT_LINE(REC_EMP.EMPNO); -- 1234
+
+END;
+/
+
+DECLARE
+        TYPE T_ADDRESS IS RECORD(   --RECORD TYPE 정의
+                ADDR1   VARCHAR2(60),   -- 주소1
+                ADDR2   VARCHAR2(60),   -- 주소2
+                ZIP     VARCHAR2(7),    -- 우편번호
+                PHONE   VARCHAR2(14)    -- 전화번호
+        );
+        TYPE T_EMP_RECORD IS RECORD (   -- RECORD TYPE 정의
+                EMPNO   NUMBER(4),      -- 사번
+                ENAME   VARCHAR2(10),   -- 이름
+                JOB     VARCHAR2(9),    -- 직업
+                ADDRESS T_ADDRESS,      -- 주소
+                HIREDATE DATE);         -- 입사일
+REC_EMP T_EMP_RECORD;
+
+BEGIN
+        -- RECORD의 FIELD에 값을 대입
+        REC_EMP.EMPNO := 1234;
+        REC_EMP.ENAME := 'XMAN';
+        REC_EMP.JOB := 'DBA';
+        REC_EMP.ADDRESS.ADDR1 := '강남구 역삼동';
+        REC_EMP.ADDRESS.ZIP := '150-036';
+        REC_EMP.HIREDATE := SYSDATE - 365;
+        
+        -- RECORD의 FIELD값을 조회
+        DBMS_OUTPUT.PUT_LINE('*********************************************');
+        DBMS_OUTPUT.PUT_LINE('사번 : '|| REC_EMP.EMPNO);
+        DBMS_OUTPUT.PUT_LINE('이름 : '|| REC_EMP.ENAME);
+        DBMS_OUTPUT.PUT_LINE('직업 : '|| REC_EMP.JOB);
+        DBMS_OUTPUT.PUT_LINE('주소 : '|| REC_EMP.ADDRESS.ADDR1);
+        DBMS_OUTPUT.PUT_LINE('주소 : '|| REC_EMP.ADDRESS.ZIP);
+        DBMS_OUTPUT.PUT_LINE('입사일 : '|| TO_CHAR(REC_EMP.HIREDATE, 'YYYY/MM/DD'));
+        DBMS_OUTPUT.PUT_LINE('*********************************************');
+END;
+/
+
+
+DECLARE 
+    TYPE T_EMP_LIST IS TABLE OF VARCHAR(20)
+        INDEX BY BINARY_INTEGER;
+    TBL_EMP_LIST T_EMP_LIST;
+    V_TMP VARCHAR2(20);
+    V_INDEX NUMBER(10);
+BEGIN
+    TBL_EMP_LIST(1) := 'SCOTT';
+    TBL_EMP_LIST(1000) := 'MILLER';
+    TBL_EMP_LIST(-2134) := 'ALLEN';
+    
+    TBL_EMP_LIST(10) := 'XMAN';
+    
+    V_TMP := TBL_EMP_LIST(1000);
+    
+    DBMS_OUTPUT.PUT_LINE(TBL_EMP_LIST(1000)); -- MILLER
+    DBMS_OUTPUT.PUT_LINE(TBL_EMP_LIST(-2134)); -- ALLEN
+    DBMS_OUTPUT.PUT_LINE(TBL_EMP_LIST(1)); -- SCOTT
+
+    IF NOT TBL_EMP_LIST.EXISTS(888) THEN
+        DBMS_OUTPUT.PUT_LINE('DATA OF KEY 888 IS NOT EXIST'); -- DATA OF KEY 888 IS NOT EXIST
+    END IF;
+    
+    V_INDEX := TBL_EMP_LIST.FIRST;
+    LOOP
+        DBMS_OUTPUT.PUT_LINE(V_INDEX); -- -2134, 1, 10, 1000
+        V_INDEX := TBL_EMP_LIST.NEXT(V_INDEX);
+        EXIT WHEN V_INDEX IS NULL;
+    END LOOP;
+    
+    DBMS_OUTPUT.PUT_LINE('DATA OF KEY 999 IS'||TBL_EMP_LIST(999)); -- 출력 X -> 예외로 던진다.
+    DBMS_OUTPUT.PUT_LINE('DATA OF KEY 0 IS'||TBL_EMP_LIST(0)); -- 출력 X
+    
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        DBMS_OUTPUT.PUT_LINE(TO_CHAR(SQLCODE)); -- 100
+        DBMS_OUTPUT.PUT_LINE(SQLERRM); -- ORA-01403: 데이터를 찾을 수 없습니다.
+END;
+/
+    
+
+DECLARE 
+    V_EMPNO EMP.EMPNO%TYPE;
+    V_ENAME EMP.EMPNO%TYPE;
+    V_HIREDATE EMP.HIREDATE%TYPE;
+    
+BEGIN
+    -- 하나의 변수에는 하나만 저장할 수 있어서 에러가 발생
+    -- SELECT 되는 대상 데이터가 1개 이상인 조회
+    SELECT EMPNO, ENAME, HIREDATE INTO V_EMPNO, V_ENAME, V_HIREDATE
+    FROM EMP
+    WHERE EMPNO >= 1;
+    
+    DBMS_OUTPUT.PUT_LINE('SELECTED EXCATLY ONE ROW' || V_EMPNO);
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        DBMS_OUTPUT.PUT_LINE('NO_DATA_FOUND');
+    WHEN TOO_MANY_ROWS THEN
+        DBMS_OUTPUT.PUT_LINE('TOO_MANY_ROWS');
+END;
+/
+
+
