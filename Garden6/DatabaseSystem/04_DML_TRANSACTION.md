@@ -1,7 +1,3 @@
-## 08_200513
-
-
-
 ```SQL
 SELECT * FROM TAB;
 
