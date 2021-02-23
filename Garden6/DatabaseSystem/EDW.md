@@ -140,3 +140,5 @@ EDW로 이관을 위한 중간단계 데이터로, 원천데이터의 복사본�
 
 
 
+![etl_concept.gif](images/etl_concept.gif)
+
