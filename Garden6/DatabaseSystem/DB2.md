@@ -120,3 +120,125 @@ SELECT * FROM MEMBER WHERE NAME ='JASON' ORDER BY AGE DESC
 서브쿼리쓸때 유용하게 사용가능.
 
 **FETCH FIRST 1 ROWS ONLY**
+
+
+
+DB2 procedure
+
+```sql
+/** 프로시저 생성 **/
+CREATE OR REPLACE PROCEDURE SCHEMA_NAME.PROCEDURE_NAME (
+    /** 파라미터 설정( IN, OUT, INOUT ) **/
+    IN    I_STRD_DT    VARCHAR(8),
+    IN    I_PARAM_1    VARCHAR(50),
+    IN    I_PARAM_2    BIGINT,
+    OUT   O_MESSAGE    VARCHAR(1000)
+)
+BEGIN
+    /** 시작시간을 담은 변수 **/
+    DECLARE V_STA_TIME VARCHAR(14);
+    
+    /** 파마리터를 담을 변수 **/
+    DECLARE V_STRD_DT VARCHAR(8);
+    DECLARE V_PARAM_1 VARCHAR(50);
+    DECLARE V_PARAM_2 BIGINT;
+    
+    /** 계산값을 담을 변수 **/
+    DECLARE V_NUM     BIGINT;
+    DECLARE V_TOT     BIGINT;
+    
+    /** 묵시적 커서의 결과 변수 **/
+    DECLARE V_INSERT_CNT DECIMAL(13, 0);
+    DECLARE V_UPDATE_CNT DECIMAL(13, 0);
+    DECLARE V_DELETE_CNT DECIMAL(13, 0);
+    
+    /** 오류 메시지 변수 **/
+    DECLARE V_ERR_MSG VARCHAR(50);
+    
+    /** 동적쿼리 변수 **/
+    DECLARE V_QRY VARCHAR(4000);
+    
+    /** 커서 **/
+    DECLARE CUR1 CURSOR;
+    
+    /** SQL상태변수 **/
+    DECLARE SQLCODE INT;
+    DECLARE SQLSTATE CHAR(5) DEFAULT '00000';
+    
+    
+    BEGIN
+        /** 예외처리 **/
+        DECLARE EXIT HANDLER FOR SQLEXCEPTION
+        BEGIN
+            SET V_ERR_MSG = 'EXCEPTION > SQLSTATE=['||SQLSTATE||'], SQLCODE=['||TO_CHAR(SQLCODE)||']';
+            SET O_MESSAGE = V_ERR_MSG;
+            CALL DBMS_OUTPUT.PUT_LINE( O_MESSAGE );
+        END
+        ;
+        
+        /** 변수 초기화 **/
+        SET V_STA_TIME = TO_CHAR(CURRENT TIMESTAMP, 'YYYYMMDDHH24MISS');
+        
+        SET V_STRD_DT = I_STRD_DT;
+        SET V_PARAM_1 = I_PARAM_1;
+        SET V_PARAM_2 = I_PARAM_2;
+        
+        SET V_NUM = 0;
+        SET V_TOT = 0;
+        
+        SET V_INSERT_CNT = 0;
+        SET V_UPDATE_CNT = 0;
+        SET V_DELETE_CNT = 0;
+        
+        SET V_ERR_MSG = '';
+        SET O_MESSAGE = 'SUCCESS';
+        
+        /** 
+         * WITH순환절
+         * 1~N 까지의 수를 출력하고 모두 더하시오.
+         * N은 V_PARAM_2을 사용.
+         **/
+         
+        /** 동적쿼리 생성 **/
+        SET V_QRY = '
+        WITH COUNTING ( NUM ) AS (
+            SELECT 1 AS NUM
+              FROM SYSIBM.SYSDUMMY1
+             UNION ALL
+            SELECT T1.NUM + 1 NUM
+              FROM COUNTING T1
+             WHERE 1=1
+               AND T1.NUM < '||V_PARAM_2||'
+        )
+        SELECT T1.NUM
+          FROM COUNTING
+        ';
+        
+        /** 동적쿼리 커서 생성 **/
+        PREPARE STMT1 FROM V_QRY;
+        SET CUR1 = CURSOR WITH HOLD FOR STMT1;
+        
+        /** 커서 실행 **/
+        OPEN CUR1;
+            FETCH FROM CUR1 INTO V_NUM;
+            WHILE SQLCODE = '00000' DO
+                
+                SET V_TOT = V_TOT + V_NUM;
+                
+                CALL DBMS_OUTPUT.PUT_LINE( 'NUM = '||V_NUM );
+                
+                FETCH FROM CUR1 INTO V_NUM;
+            END WHILE;
+        CLOSE CUR1;
+        
+        CALL DBMS_OUTPUT.PUT_LINE( '================');
+        CALL DBMS_OUTPUT.PUT_LINE( 'TOT = '||V_TOT );
+        
+    END
+    ;
+END
+;
+```
+
+
+
